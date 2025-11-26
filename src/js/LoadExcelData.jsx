@@ -4,7 +4,7 @@ import { toast } from 'sonner'
 export const loadExcelData = async (nombreArchivo, headerRows = []) => {
 	try {
 		// Hacer fetch del archivo Excel desde la carpeta EXCELES
-		const ruta = `./BASES_ClaroSwat/${nombreArchivo}`
+		const ruta = `./BASES_XxxXxx/${nombreArchivo}`
 
 		const response = await fetch(ruta, { cache: 'no-store' })
 

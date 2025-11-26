@@ -43,7 +43,7 @@ const showModal = data => {
 }
 
 const setVersion = async () => {
-	const ruta = `./BASES_ClaroSwat/NO_TOCAR.xlsx`
+	const ruta = `./BASES_XxxXxx/NO_TOCAR.xlsx`
 	const rutaCompleta = new URL(ruta, window.location.href).href
 	const response = await fetch(rutaCompleta)
 	const data = await response.blob()
@@ -67,7 +67,7 @@ const setVersion = async () => {
 sendForm.addEventListener('submit', e => {
 	e.preventDefault()
 
-	const ruta = `./BASES_ClaroSwat/BASE_PERSONAL.xlsx`
+	const ruta = `./BASES_XxxXxx/BASE_PERSONAL.xlsx`
 	const rutaCompleta = new URL(ruta, window.location.href).href
 	fetch(rutaCompleta)
 		.then(response => response.blob())

@@ -79,10 +79,10 @@ const getColorByArea = area => {
 const getImageByName = imageName => {
 	// Verificar si el nombre ya incluye la extensión
 	if (imageName.includes('.')) {
-		return `BASES_ClaroSwat/Aplicativos_Web/imagenes/${imageName}`
+		return `BASES_XxxXxx/Aplicativos_Web/imagenes/${imageName}`
 	}
 	// Si no incluye extensión, intentar primero con .PNG
-	return `BASES_ClaroSwat/Aplicativos_Web/imagenes/${imageName}.PNG`
+	return `BASES_XxxXxx/Aplicativos_Web/imagenes/${imageName}.PNG`
 }
 
 export default function AppsWeb() {

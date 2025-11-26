@@ -117,7 +117,7 @@ const ListItem = React.forwardRef(({ className, title, children, image, ...props
 					{...props}>
 					<figure className="text-sm font-medium leading-none">
 						<img
-							src={`BASES_ClaroSwat/Aplicativos_Web/imagenes/${image}.PNG`}
+							src={`BASES_XxxXxx/Aplicativos_Web/imagenes/${image}.PNG`}
 							alt={title}
 							className="object-cover w-full h-full"
 						/>

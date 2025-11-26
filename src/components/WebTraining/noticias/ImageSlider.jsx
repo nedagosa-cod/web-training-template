@@ -25,7 +25,7 @@ export const ImageSlider = ({ autoPlayInterval = 4000, className }) => {
 						const img = new Image()
 						img.onload = () => resolve(true)
 						img.onerror = () => resolve(false)
-						img.src = `BASES_ClaroSwat/NOTICIAS/${slide.src}`
+						img.src = `BASES_XxxXxx/NOTICIAS/${slide.src}`
 					})
 
 					if (imageExists) {
@@ -141,11 +141,7 @@ export const ImageSlider = ({ autoPlayInterval = 4000, className }) => {
 								'absolute inset-0 h-full w-full transition-opacity duration-700',
 								index === currentIndex ? 'opacity-100' : 'opacity-0 pointer-events-none'
 							)}>
-							<img
-								src={`BASES_ClaroSwat/NOTICIAS/${slide.src}`}
-								alt={slide.alt}
-								className="object-cover w-full h-full"
-							/>
+							<img src={`BASES_XxxXxx/NOTICIAS/${slide.src}`} alt={slide.alt} className="object-cover w-full h-full" />
 						</div>
 					))}
 				</div>

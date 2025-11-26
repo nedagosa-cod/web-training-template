@@ -11,7 +11,7 @@ module.exports = {
 	entry: './src/index.jsx',
 	devtool: 'source-map',
 	output: {
-		path: path.join(__dirname, 'Web Training'),
+		path: path.join(__dirname, 'Web_Training'),
 		filename: 'noTocar/bundle.js',
 		publicPath: './', //ALERTA configuracion de produccion (/)
 		assetModuleFilename: 'noTocar/assets/[name][ext]', //*
@@ -86,12 +86,12 @@ module.exports = {
 				},
 				{
 					from: path.join(__dirname, '/src/assets/images/NOTICIAS'),
-					to: 'BASES_ClaroSwat/NOTICIAS',
+					to: 'BASES_XxxXxx/NOTICIAS',
 					noErrorOnMissing: true,
 				},
 				{
 					from: path.join(__dirname, '/public/ddbb/'), // Ruta de la carpeta de bases de datos
-					to: 'BASES_ClaroSwat', // Ruta donde se copiará la carpeta ddbb
+					to: 'BASES_XxxXxx', // Ruta donde se copiará la carpeta ddbb
 					noErrorOnMissing: true,
 					globOptions: {
 						ignore: [
@@ -106,12 +106,12 @@ module.exports = {
 				},
 				{
 					from: path.join(__dirname, '/src/assets/images/applinks'),
-					to: 'BASES_ClaroSwat/Aplicativos_Web/imagenes',
+					to: 'BASES_XxxXxx/Aplicativos_Web/imagenes',
 					noErrorOnMissing: true,
 				},
 				{
 					from: path.join(__dirname, '/public/ddbb/Aplicativos_Web.xlsx'), // Ruta de la carpeta de bases de datos
-					to: 'BASES_ClaroSwat/Aplicativos_Web', // Ruta donde se copiará la carpeta ddbb
+					to: 'BASES_XxxXxx/Aplicativos_Web', // Ruta donde se copiará la carpeta ddbb
 					noErrorOnMissing: true,
 				},
 			],
@@ -126,17 +126,18 @@ module.exports = {
 		extensions: ['.js', '.jsx'],
 		alias: {
 			// evitar estar poniendo rutas relativas en los import
-			'@images': path.join(__dirname, '/src/assets/images/'),
-			'@components': path.join(__dirname, '/src/components/'),
-			'@styles': path.join(__dirname, '/src/styles/'),
-			'@icons': path.join(__dirname, '/src/icons/'),
-			'@/lib': path.join(__dirname, '/src/lib/'),
+			'@/src': path.join(__dirname, '/src/'),
+			'@/assets': path.join(__dirname, '/src/assets/'),
 			'@/components': path.join(__dirname, '/src/components/'),
-			'@/icons': path.join(__dirname, '/src/icons/'),
+			'@components': path.join(__dirname, '/src/components/'),
 			'@/context': path.join(__dirname, '/src/context/'),
 			'@/data': path.join(__dirname, '/src/data/'),
-			'@/assets': path.join(__dirname, '/src/assets/'),
 			'@/hooks': path.join(__dirname, '/src/hooks/'),
+			'@/icons': path.join(__dirname, '/src/icons/'),
+			'@icons': path.join(__dirname, '/src/icons/'),
+			'@/lib': path.join(__dirname, '/src/lib/'),
+			'@images': path.join(__dirname, '/src/assets/images/'),
+			'@styles': path.join(__dirname, '/src/styles/'),
 		},
 	},
 	devServer: {

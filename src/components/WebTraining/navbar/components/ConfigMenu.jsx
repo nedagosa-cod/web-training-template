@@ -16,7 +16,7 @@ export default function ConfigMenu() {
 	const [version, setVersion] = useState(null)
 	const { setTheme, theme } = useTheme()
 	const setVersionState = async () => {
-		const ruta = `./BASES_ClaroSwat/NO_TOCAR.xlsx`
+		const ruta = `./BASES_XxxXxx/NO_TOCAR.xlsx`
 		const rutaCompleta = new URL(ruta, window.location.href).href
 		const response = await fetch(rutaCompleta)
 		const data = await response.blob()
@@ -33,7 +33,6 @@ export default function ConfigMenu() {
 			})
 			return objeto
 		})
-		console.log(jsonGeneral[0].VALOR)
 		return jsonGeneral[0].VALOR
 	}
 	useEffect(() => {

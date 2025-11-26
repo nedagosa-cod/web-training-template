@@ -396,7 +396,7 @@ const HorNav = ({ activeSegment }) => {
 
 							<div className="hidden relative flex-col justify-center items-center mx-4 lg:flex">
 								<h2 className="text-3xl text-center text-primary dark:text-white text-nowrap">Web Training</h2>
-								<span className="text-sm text-center text-primary dark:text-white text-nowrap">Claro Swat</span>
+								<span className="text-sm text-center text-primary dark:text-white text-nowrap">NOMBRE CAMPAÑA</span>
 							</div>
 						</div>
 					</div>
