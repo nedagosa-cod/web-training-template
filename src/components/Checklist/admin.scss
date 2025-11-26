@@ -1,0 +1,78 @@
+.admin {
+	display: block;
+	&.add-check {
+		position: relative;
+		width: 100%;
+		background: green;
+		margin-bottom: 4rem;
+		& svg {
+			opacity: 0.4;
+			margin: auto;
+			width: 40px;
+			position: absolute;
+			z-index: 10;
+			top: 0;
+			left: 50%;
+			background: #969696;
+			fill: #fff;
+			padding: 1rem;
+			cursor: pointer;
+			border-radius: 100%;
+			-webkit-border-radius: 100%;
+			-moz-border-radius: 100%;
+			-ms-border-radius: 100%;
+			-o-border-radius: 100%;
+			transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+			-moz-transform: translateX(-50%);
+			-ms-transform: translateX(-50%);
+			-o-transform: translateX(-50%);
+			-webkit-box-shadow: 0px 2px 4px 1px rgba(66, 68, 90, 0.25);
+			-moz-box-shadow: 0px 2px 4px 1px rgba(66, 68, 90, 0.25);
+			box-shadow: 0px 2px 4px 1px rgba(66, 68, 90, 0.25);
+			&:hover {
+				opacity: 1;
+				background: #a2ff9f;
+				transform: translateX(-50%) scale(1.1);
+				-webkit-transform: translateX(-50%) scale(1.1);
+				-moz-transform: translateX(-50%) scale(1.1);
+				-ms-transform: translateX(-50%) scale(1.1);
+				-o-transform: translateX(-50%) scale(1.1);
+			}
+		}
+	}
+	&.svg-edit {
+		width: 20px;
+		margin-right: 1rem;
+		fill: #969696;
+		cursor: pointer;
+		&:hover {
+			opacity: 1;
+			fill: #a2ff9f;
+			transform: scale(1.1);
+			-webkit-transform: scale(1.1);
+			-moz-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			-o-transform: scale(1.1);
+		}
+	}
+	&.input-step {
+		width: 100%;
+		padding: 0 1rem;
+		text-align: center;
+		font-size: 2rem;
+		background: #fffd9f;
+		margin: 0 0.4rem;
+	}
+	&__segment {
+		max-width: 100px;
+		padding-right: 10px;
+		position: relative;
+		right: -20px;
+		background: #9d4edd;
+		border: none !important;
+	}
+	&.off {
+		display: none;
+	}
+}

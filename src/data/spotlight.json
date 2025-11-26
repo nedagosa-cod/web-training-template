@@ -1,0 +1,95 @@
+[
+	{
+		"id": 1,
+		"type": "corrector",
+		"segment": "Global",
+		"title": "Corrector Ortográfico",
+		"name": "Corrector Ortografico",
+		"content": "Digita tu texto para corregir ortograficamente o redactar para transcribir a texto",
+		"keywords": ["transcribir", "corregir", "ortografia", "redactor"],
+		"icon": "textSlash",
+		"path": "/corrector"
+	},
+	{
+		"id": 2,
+		"type": "corrector",
+		"segment": "Global",
+		"title": "Corrector Ortográfico",
+		"name": "Redactor de voz a texto",
+		"content": "Digita tu texto para corregir ortograficamente o redactar para transcribir a texto",
+		"keywords": ["transcribir", "corregir", "ortografia", "redactor"],
+		"icon": "textSlash",
+		"path": "/corrector"
+	},
+	{
+		"id": 3,
+		"type": "Tipificador",
+		"segment": "Global",
+		"title": "Contramarea",
+		"name": "Contramarea",
+		"content": "Contramarea",
+		"keywords": ["contramarea", "Tipificador"],
+		"icon": "tipify",
+		"path": "/contramarea"
+	},
+	{
+		"id": 7,
+		"type": "aplicativos",
+		"segment": "Global",
+		"title": "Aplicativos Web",
+		"name": "Cajero Kactus",
+		"content": "Consulta tu información laboral",
+		"keywords": ["aplicativos", "web", "cajero", "kactus", "nomina"],
+		"icon": "globe",
+		"path": "https://cajerokactus.atento.com.co:8443/WebKactus/frmLogin.aspx",
+		"action": "redirect"
+	},
+	{
+		"id": 8,
+		"type": "aplicativos",
+		"segment": "Global",
+		"title": "Aplicativos Web",
+		"name": "Cafe Go",
+		"content": "Aplicativo Web",
+		"keywords": ["aplicativos", "web", "cafe go"],
+		"icon": "globe",
+		"path": "https://cafesite7.atento.com.co:11001/cafe_GO/login/index.php",
+		"action": "redirect"
+	},
+	{
+		"id": 9,
+		"type": "aplicativos",
+		"segment": "Global",
+		"title": "Aplicativos Web",
+		"name": "Cafe Academia",
+		"content": "Aplicativo Web",
+		"keywords": ["aplicativos", "web", "cafe academia"],
+		"icon": "globe",
+		"path": "https://academia.atento.com.co/academia/login/index.php",
+		"action": "redirect"
+	},
+	{
+		"id": 11,
+		"type": "aplicativos",
+		"segment": "Global",
+		"title": "Aplicativos Web",
+		"name": "GAP",
+		"content": "Gestion de asistencia personal",
+		"keywords": ["aplicativos", "web", "gap"],
+		"icon": "globe",
+		"path": "http://172.17.125.11/ControlAsistencia/login.php",
+		"action": "redirect"
+	},
+	{
+		"id": 12,
+		"type": "aplicativos",
+		"segment": "Global",
+		"title": "Aplicativos Web",
+		"name": "EnDirecto",
+		"content": "Gestion de asistencia personal",
+		"keywords": ["aplicativos", "web", "endirecto"],
+		"icon": "globe",
+		"path": "http://172.17.125.11/endirecto/web/index.php/main/login",
+		"action": "redirect"
+	}
+]

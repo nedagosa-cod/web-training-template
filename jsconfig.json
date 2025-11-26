@@ -1,0 +1,10 @@
+// CONFIGURACION PARA SHADCN/UI
+{
+	"compilerOptions": {
+		"baseUrl": "src",
+		"paths": {
+			"@/*": ["*"]
+		}
+	},
+	"include": ["src"]
+}

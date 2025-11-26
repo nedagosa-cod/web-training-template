@@ -1,0 +1,263 @@
+{
+	"TITLE": "COMO CREAR MATERIAL PARA",
+	"DESCRIPCIONES": [
+		{
+			"check": "A",
+			"ENDSCRROLL": "true",
+			"html": [
+				{ "TITULO": "Tener en cuenta" },
+				{ "SUBTITLE": "Subtitulo de la pagina" },
+				{ "IMG": "estructure.png", "SPACE": "30%" },
+				{ "LINK": "http://www.youtube.com", "NAME": "YouTube" },
+				{
+					"P": "- Lorem Ipsum is &tip[este es el significado]simply&tip dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+				},
+				{
+					"DATA_TEXT": "Nombre del cliente",
+					"POS": "A"
+				},
+				{
+					"DATA_DATE": "Fecha de gestión",
+					"POS": "B"
+				},
+				{
+					"DATA_BOOL": "Pregunta de respuesta booleana",
+					"POS": "C",
+					"SI": [
+						{
+							"DATA_TEXT": "Nombre del cliente",
+							"POS": "D"
+						},
+						{
+							"DATA_DATE": "Fecha de gestión",
+							"POS": "E"
+						},
+						{
+							"DATA_BOOL": "Pregunta de respuesta booleana",
+							"POS": "F",
+							"SI": [
+								{
+									"P": "4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro"
+								},
+								{
+									"SCRIPT": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro, quisquam consectetur provident suscipit atque!"
+								},
+								{
+									"LIST": ["DATO 1", "DATO 2", "DATO 3"]
+								},
+								{
+									"IMPORTANT": "Mensaje importante para el checklist o la gestion del paso del checklist",
+									"TITLE": "IMPORTANTE!"
+								}
+							],
+							"NO": [
+								{
+									"P": "1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro, quisquam consectetur provident suscipit atque!"
+								},
+								{
+									"LIST": ["DATO 1", "DATO 2", "DATO 3"]
+								},
+								{
+									"IMPORTANT": "Mensaje importante para el checklist o la gestion del paso del checklist",
+									"TITLE": "IMPORTANTE!"
+								},
+								{
+									"SCRIPT": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro, quisquam consectetur provident suscipit atque!"
+								}
+							]
+						}
+					],
+					"NO": [
+						{
+							"P": "1. Soy La Rta de No dolor sit amet consectetur adipisicing elit. Ipsam porro, quisquam consectetur provident suscipit atque!"
+						},
+						{
+							"LIST": ["DATO 1", "DATO 2", "DATO 3"]
+						}
+					]
+				},
+				{
+					"DATA_LIST": "Lista de opciones",
+					"POS": "D",
+					"OPTIONS": [
+						{
+							"NAME": "Opcion 1",
+							"HTML": [
+								{
+									"P": "- Lorem Ipsum is &tip[este es el significado]simply&tip dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+								},
+								{
+									"P": "- Lorem Ipsum is &tip[este es el significado]simply&tip dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+								}
+							]
+						},
+						{
+							"NAME": "Opcion 2",
+							"HTML": [
+								{
+									"P": "- Lorem Ipsum is &tip[este es el significado]simply&tip dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+								}
+							]
+						}
+					]
+				},
+				{
+					"TITLE": "Nota importante",
+					"NOTA": "Esta es una prueba de la nota importante que se puede agregar al checklist",
+					"TYPE": "question"
+				},
+				{
+					"IMPORTANT": "DEBEN EXISTIR MINIMO 3 PASOS (A,B,C) delo contrario no funcionaria como lista de checkeo.",
+					"TITLE": "Tener en cuenta!"
+				},
+				{
+					"SCRIPTS": [
+						"Si tengo un texto que es bastante largo que tanto espacio ocupo?, sera que salto de linea?",
+						"Que pasa la prueba",
+						"Script numero dos"
+					]
+				},
+				{ "SUBTITLE": "Subtitulo de la pagina" },
+				{
+					"P": "2. Se compartira un correo con la plantilla y cada uno de los instructivos para el envio del material de manera correcta"
+				},
+				{
+					"P": "3. Revisar &boldotográfia&bold del material a enviar, los desarrolladores no tendran en cuenta la ortográfia ya que en las campañas existen terminologías que pueden relacionarse con el español o siglas que desconocen y son solo funcionales en operación"
+				},
+				{
+					"P": "4. Si en los textos del material se incluyen “&boldnegritas&bold &curscursivas&curs” así mismo se mostrarán en el desarrollo."
+				},
+				{ "BTN_JUMP": "IR AL PASO SIGUIENTE 'B'", "TO": "B" }
+			]
+		},
+		{
+			"check": "B",
+			"ENDSCRROLL": "true",
+			"html": [
+				{ "TITULO": "Estructura del material" },
+				{ "P": "1. El check list tiene distintos elementos ya estructurados, como pueden ser:" },
+				{
+					"LIST": [
+						"Parrafos",
+						"Pasos",
+						"Puntos",
+						"Boton de redirección",
+						"Imagenes aclarativas",
+						"imagenes informativas",
+						"Mensaje importante",
+						"Validación de datos",
+						"Validación de datos interna",
+						"Tool Tip"
+					]
+				},
+				{ "MARCO": "Estructura" },
+				{ "P": "2. Click en el icono de la imagen para previsualizar la estructura del material para el checklist." },
+				{ "IMG": "estructure.png", "SPACE": "30%" },
+				{ "SCRIPTS": ["Tercero script de otro paso"] },
+				{
+					"IMPORTANT": "DEBEN EXISTIR MINIMO 3 PASOS (A,B,C) delo contrario no funcionaria como lista de checkeo.",
+					"TITLE": "Tener en cuenta!"
+				},
+				{ "BTN_JUMP": "IR AL PASO SIGUIENTE 'C'", "TO": "C" }
+			]
+		},
+		{
+			"check": "C",
+			"html": [
+				{ "TITULO": "Creación de elementos para checklist básico" },
+				{
+					"P": "1. Como vimos anteriormente tenemos distintos elementos que se pueden crear en un checklist y que estan estructurados en word."
+				},
+				{
+					"SCRIPTS": [
+						"A continuación se mostrara como crear cada elemento que necesite en word en el orden correspondiente y se mostraran ejemplo de como se va viendo la estructura en word"
+					]
+				},
+				{ "SUBTITLE": "TITULO" },
+				{
+					"P": "◉ En un archivo de word en blanco inicie con el &boldTITULO DEL CHECK LIST&&bold como se muestra en el ejemplo ↴"
+				},
+				{ "IMG": "exampleImg.png", "SPACE": "70%" },
+				{ "SUBTITLE": "PASO" },
+				{
+					"P": "◉ Todos los pasos deben estar identificados con el orden alfabetico ascendente 'A,B,C...' y su respectivo titulo identificador."
+				},
+				{
+					"SCRIPTS": [
+						"En el checklist que estas viendo, en la parte izquierda se encuentra el flujo de pasos que debes seguir para saber como crea un checklist."
+					]
+				},
+				{ "P": "◉ En el siguiente ejemplo veras como agregar un paso en el material del documento de word" },
+				{ "IMG": "examplePasos.png", "SPACE": "70%" },
+				{ "SUBTITLE": "PARRAFOS" },
+				{
+					"P": "◉ Los parrafos son texto plano para dar una información de paso que el asesor debe seguir, como en este caso que te extoy explicando que es un parrafo."
+				},
+				{
+					"P": "- &cursCabe aclarar que los parrafos deben venir precedidos del numero que sigue con respecto al anterior, con eso damos a entender que el parrafo escrito es el parrafo 1, 2, 3 etc.., y en temas de actualizaciones futuras se logra una mejor comunicación que el desarrollador&curs"
+				},
+				{ "P": "- A continuación un ejemplo de como deberia verse un parrafo en en el material del documento word ↴" },
+				{ "IMG": "exampleParrafo.png", "SPACE": "70%" },
+				{ "P": "- Adicional tenemos la lista basica como se muestra en el ejemplo ↴" },
+				{ "IMG": "exampleList.png", "SPACE": "70%" },
+				{ "SUBTITLE": "BOTON DE REDIRECCIONAMIENTO" },
+				{
+					"P": "◉ Este boton se usa para dirijir al asesor a alguna pagina que deban ingresar durante el proceso y validar o completar cierta información allí."
+				},
+				{
+					"P": "- Puedes agregar un boton resaltando el link de color verde y el nombre del boton de color amarillo como se muestra en el ejemplo:"
+				},
+				{ "IMG": "exampleLink.png", "SPACE": "70%" },
+				{ "SUBTITLE": "IMAGENES" },
+				{
+					"P": "◉ Estas imagenes por lo general hacen referencia a lo que explicaste en el parrafo anterior, como se ha visto en los ejemplos anteriores de este checklist, donde muestra una imagen del aplicativo que el asesor debe manipular y aclarando en donde debe estar segun el paso del parrafo."
+				},
+				{
+					"P": "- Puedes Agregar una imagen tomando un screenshot o captura de pantalla y posicionando la captura seguido del parrafo que quieres aclarar con dicha imagen como se muestra en el siguiente ejemplo ↴"
+				},
+				{ "IMG": "exampleImage.png", "SPACE": "70%" },
+				{
+					"IMPORTANT": "Al pegar las imagenes en word POR FAVOR NO cambiar el tamaño de la imagen desde los laterales, de lo contrario realizarlo desde los vertices o ezquinas ya que con esto mantendrá las proporciones y no se vera pixelada en la página.",
+					"TITLE": "Tener en cuenta"
+				},
+				{ "SUBTITLE": "COMENTARIO PARA EL DESARROLLADOR" },
+				{
+					"P": "◉ Pueden existir ocaciones donde requieras que el checklist haga algo diferente, ese algo, puedes dejarselo como anotación para el desarrollador marcando/resaltando dicho comentario en color amarillo, y esto no se verá plasmado en el checklist, ejemplo ↴"
+				},
+				{ "IMG": "exampleAnotacion.png", "SPACE": "70%" },
+				{
+					"SCRIPTS": [
+						"En el siguiente PUNTO se encuentran los elementos para la creación de checklist avanzado, como lo son elementos de validación de datos..."
+					]
+				},
+				{ "BTN_JUMP": "IR AL PASO SIGUIENTE 'D'", "TO": "D" }
+			]
+		},
+		{
+			"check": "D",
+			"html": [
+				{ "TITULO": "Cierra" },
+				{
+					"P": "1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro, quisquam consectetur provident suscipit atque!"
+				},
+				{
+					"P": "2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro, quisquam consectetur provident suscipit atque!"
+				},
+				{
+					"P": "3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro, quisquam consectetur provident suscipit atque!"
+				},
+				{ "LINK": "http://www.youtube.com", "NAME": "YouTube" },
+				{ "IMG": "logoSIn.png", "SPACE": "50%" },
+				{ "SUBTITLE": "Subtitulo de la pagina" },
+				{
+					"P": "4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro, quisquam consectetur provident suscipit atque!"
+				},
+				{
+					"NOTA": "Mensaje importante para el &boldchecklist&bold o la gestion del paso del checklist",
+					"TITLE": "IMPORTANTE!",
+					"TYPE": "warning"
+				}
+			]
+		}
+	]
+}

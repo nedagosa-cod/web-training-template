@@ -1,0 +1,53 @@
+{
+	"SEGMENTS": [
+		{
+			"segment": "SWAT",
+			"icon": "home"
+		}
+	],
+	"NAVBAR": [
+		{
+			"title": "Inicio",
+			"route": "/",
+			"icon": "home"
+		},
+		{
+			"title": "Aplicativos web",
+			"route": "/appsweb",
+			"icon": "web",
+			"segments": ["SWAT"],
+			"dropDown": [
+				{
+					"title": "GO CONTACT",
+					"route": "https://atento-tmk-claro.gocontact.com/login.html",
+					"image": "imagen59.png"
+				},
+				{
+					"title": "Kactus",
+					"route": "https://cajerokactus.atento.com.co:8443/WebKactus/frmLogin.aspx?",
+					"image": "KACTUS.png"
+				},
+				{
+					"title": "En directo",
+					"route": "http://172.17.125.11/endirecto/web/index.php/main/login",
+					"image": "ENDIRECTO.png"
+				},
+				{
+					"title": "CAFÉ CLARO",
+					"route": "https://cafesite8.atento.com.co/cafe_claro_local/",
+					"image": "CAFEOPERACIONES.png"
+				},
+				{
+					"title": "CONECTADOS",
+					"route": "https://conectados.com.co/inicio",
+					"image": "conectados.png"
+				},
+				{
+					"title": "GAP",
+					"route": "172.17.125.11/Simplex",
+					"image": "GAP.png"
+				}
+			]
+		}
+	]
+}

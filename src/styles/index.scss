@@ -1,0 +1,140 @@
+@use 'variables' as *;
+
+body {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	// background-repeat: repeat;
+	// background: linear-gradient(315deg, #d6dbe7 3%, #ffffff 38%, #a9b1c4 68%, #ffffff 98%);
+	// animation: gradient 30s ease infinite;
+	// background-size: 400% 400%;
+	// background-attachment: fixed;
+	// -webkit-animation: gradient 30s ease infinite;
+	width: 100%;
+	height: 100vh;
+	font-size: 100%;
+	min-height: 100dvh;
+	font-family: $tipo-terciaria;
+	color: $b-color;
+	overflow: hidden;
+	/* opcional */
+	font-smooth: always;
+	/* opcional */
+	-webkit-font-smoothing: antialiased;
+	/* opcional */
+	-moz-osx-font-smoothing: grayscale;
+	/* opcional Background */
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+	// font-style: inherit;
+	text-decoration: none;
+	color: inherit;
+	// text-wrap: balance;
+}
+/* Evitamos problemas con las imagenes */
+img,
+picture,
+video,
+iframe,
+figure {
+	max-width: 100%;
+	width: 100%;
+	display: block;
+	/* opcional */
+	-o-object-fit: cover;
+	object-fit: cover;
+	/* opcional */
+	-o-object-position: center center;
+	object-position: center center;
+}
+p {
+	font-style: inherit;
+	color: inherit;
+	text-wrap: pretty;
+}
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+	background-color: $b-color;
+	color: $w-color;
+}
+
+::selection {
+	background-color: $s-color;
+	color: $w-color;
+}
+
+.gutter {
+	background-color: gray;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+	cursor: col-resize;
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form,
+input,
+textarea,
+select,
+button,
+label {
+	hyphens: none;
+	font-family: inherit;
+	font-size: inherit;
+	background-color: transparent;
+	color: inherit;
+	border: none;
+	display: block;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+}
+
+table,
+tr,
+td {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// svg {
+// 	width: 100%;
+// 	display: block;
+// 	fill: currentColor;
+// }
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}

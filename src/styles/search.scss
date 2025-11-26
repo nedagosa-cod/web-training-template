@@ -1,0 +1,195 @@
+@use './variables' as *;
+
+.inputs-search {
+	position: relative;
+}
+.radio-inputs {
+	position: absolute;
+	z-index: 5;
+	bottom: 10%;
+	left: 50%;
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	margin: auto;
+	background-color: $p3-color;
+	box-sizing: border-box;
+	font-size: 1.2rem;
+	width: 80%;
+	padding: 0.4rem 1rem 0 1rem;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	&.display {
+		bottom: 100%;
+	}
+}
+
+.radio-inputs .radio input {
+	user-select: none;
+	display: none;
+}
+.radio-inputs .radio {
+	& span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+	& svg {
+		width: 2rem;
+	}
+}
+.radio-inputs .radio .name {
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	border: none;
+	padding: 0.5rem 0.8rem;
+	color: white;
+	transition: all 0.15s ease-in-out;
+	position: relative;
+}
+
+.radio-inputs .radio input:checked + .name {
+	background-color: $p-color;
+	font-weight: 600;
+}
+.radio-inputs .radio input + .name:hover {
+	color: #fff;
+}
+.radio-inputs .radio input:checked + .name:hover {
+	color: #1d1d29;
+}
+
+.radio-inputs .radio input:checked + .name::after,
+.radio-inputs .radio input:checked + .name::before {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: $p3-color;
+	bottom: 0;
+}
+
+.radio-inputs .radio input:checked + .name::after {
+	right: -10px;
+	border-bottom-left-radius: 300px;
+	box-shadow: -3px 3px 0px 3px $p-color;
+}
+.radio-inputs .radio input:checked + .name::before {
+	left: -10px;
+	border-bottom-right-radius: 300px;
+	box-shadow: 3px 3px 0px 3px $p-color;
+}
+
+.search-results {
+	opacity: 1;
+	width: 100%;
+	margin: auto;
+	min-height: 40px;
+	position: absolute;
+	padding: 1.8rem 2rem 1rem 2rem;
+	left: 50%;
+	top: 0;
+	z-index: 8;
+	background-color: $p-color;
+	color: $w-color;
+	border-radius: 4rem;
+	-webkit-border-radius: 4rem;
+	-moz-border-radius: 4rem;
+	-ms-border-radius: 4rem;
+	-o-border-radius: 4rem;
+	box-sizing: border-box;
+	font-size: 1.2rem;
+	// border: 1px solid #dddcdc;
+	box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.6);
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	&.animate__fadeInDown {
+		animation: fadeInDown 0.5s forwards;
+		-webkit-animation: fadeInDown 0.5s forwards;
+	}
+	&__object {
+		font-size: 1.4rem;
+		display: flex;
+		flex-direction: column;
+		// gap: 1.2rem;
+	}
+	&__segment {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		color: $w-color;
+		&--dev {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			font-size: 1.6rem;
+			font-weight: 600;
+			& svg {
+				width: 32px;
+				height: auto;
+			}
+		}
+		&--text {
+			font-size: 1rem;
+			color: $g-color;
+			text-align: end;
+		}
+	}
+	&__develops {
+		display: flex;
+		flex-direction: column;
+		// gap: 1rem;
+		margin-left: 4rem;
+		color: $w-color;
+		cursor: pointer;
+		padding: 0.4rem;
+		border-radius: 0.6rem;
+		-webkit-border-radius: 0.6rem;
+		-moz-border-radius: 0.6rem;
+		-ms-border-radius: 0.6rem;
+		-o-border-radius: 0.6rem;
+		&:hover {
+			background-color: #dddcdc;
+		}
+		&--dev {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			font-size: 1.2rem;
+			& svg {
+				width: 10%;
+				& path {
+					fill: url('#gr-light');
+				}
+			}
+			& p {
+				width: 90%;
+			}
+		}
+	}
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		top: 0;
+	}
+	to {
+		opacity: 1;
+		top: 90%;
+	}
+}

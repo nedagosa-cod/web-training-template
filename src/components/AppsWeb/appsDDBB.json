@@ -1,0 +1,402 @@
+[
+	{
+		"TITULO": "TR69",
+		"LINK": "https://acstr069.claro.net.co/CSR/Login.aspx",
+		"IMAGEN": "imagen3",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "T&D",
+		"LINK": "http://100.126.23.19:3000/tyd/login",
+		"IMAGEN": "imagen4",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "DIAGNOSTICADOR",
+		"LINK": "http://100.123.246.38/diagnosticador/residencial?",
+		"IMAGEN": "imagen5",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "AGENDAMIENTO",
+		"LINK": "https://agendamiento.claro.com.co/?",
+		"IMAGEN": "imagen6",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "DIME",
+		"LINK": "https://dime.claro.com.co/Portal/Produccion/?",
+		"IMAGEN": "imagen7",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "MyIT",
+		"LINK": "https://miasistencia360-dwp.claro.com.co/dwp/app/#/page/vffgofyw",
+		"IMAGEN": "imagen8",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "ANITA MyIT",
+		"LINK": "https://myit.claro.com.co:8443/myit/#/",
+		"IMAGEN": "imagen9",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "GENERA TUS NOTAS PARA RR AS400",
+		"LINK": "file://colbogfile30/claro_sac$/Agente/WhatsApp%20General/Durlandy/Whatsapp/Lina%20Calder%C3%B3n/visitas.html",
+		"IMAGEN": "imagen62",
+		"AREA": "HOGAR",
+		"CLIPBOARD": true
+	},
+	{
+		"TITULO": "GO CONTACT",
+		"LINK": "https://atento-tmk-claro.gocontact.com/login.html",
+		"IMAGEN": "imagen59",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "ABC Ultra Wifi",
+		"LINK": "https://comunidadvirtual.claro.com.co/www/lms/Biblioteca/Documentos/others/M_Servicio/Residencial/Boletines/Comunicados%20-%202019/c327/index.html?",
+		"IMAGEN": "imagen10",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "CONFIGURACION CONTROL",
+		"LINK": "https://www.claro.com.co/personas/servicios/servicios-hogar/television/configuracion-controles/?",
+		"IMAGEN": "imagen11",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "CODIGOS LLAMADAS DE SERVICIO",
+		"LINK": "https://comunidadvirtual.claro.com.co/www/lms/Biblioteca/Documentos/others/M_Servicio/Residencial/Boletines/Comunicados%20-%202018/c673/index.html?",
+		"IMAGEN": "imagen12",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "MARCACIONES",
+		"LINK": "https://conectados.com.co/group/guest/marcaciones",
+		"IMAGEN": "imagen13",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "CAV´s",
+		"LINK": "https://comunidadvirtual.claro.com.co/www/lms/Biblioteca/Documentos/others/M_Servicio/Residencial/Boletines/Comunicados%20-%202018/c1065/index.html?",
+		"IMAGEN": "imagen14",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "OFICINAS",
+		"LINK": "https://comunidadvirtual.claro.com.co/www/lms/Biblioteca/Documentos/others/M_Servicio/Residencial/Boletines/Comunicados%20-%202017/c545/index.html?",
+		"IMAGEN": "imagen15",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "ABC Velocidades @",
+		"LINK": "https://comunidadvirtual.claro.com.co/www/lms/Biblioteca/Documentos/others/M_Servicio/Residencial/Boletines/Comunicados%20-%202019/c138/index.html?",
+		"IMAGEN": "imagen16",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "CONFIRMACION DE DATOS",
+		"LINK": "https://comunidadvirtual.claro.com.co/www/lms/Biblioteca/Documentos/others/M_Servicio/Residencial/Boletines/Comunicados%20-%202018/c105/index.html?",
+		"IMAGEN": "imagen17",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "PARADIGMA",
+		"LINK": "https://facturasclaro.paradigma.com.co/ebpTelmex/Login.aspx?",
+		"IMAGEN": "imagen18",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "VISOR MOVILIDAD",
+		"LINK": "https://visormobile.claro.com.co/VisorMobile-war/?",
+		"IMAGEN": "imagen19",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "ULTRA WIFI",
+		"LINK": "https://conectados.com.co/inicio/-/knowledge_base_article/0000/17127665/maximized?p_p_auth=rHuDjYzM",
+		"IMAGEN": "imagen47",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "LINE UP",
+		"LINK": "https://conectados.com.co/inicio/-/knowledge_base_article/0000/14047000/maximized?p_p_auth=z9GhnTot",
+		"IMAGEN": "imagen43",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "POLITICAS (PTAR)",
+		"LINK": "https://conectados.com.co/inicio/-/knowledge_base_article/0000/14403267/maximized?p_p_auth=z9GhnTot",
+		"IMAGEN": "imagen54",
+		"AREA": "HOGAR"
+	},
+	{
+		"TITULO": "AC+",
+		"LINK": "https://acplus.claro.com.co/login",
+		"IMAGEN": "imagen60",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "IMEI COLOMBIA",
+		"LINK": "https://www.imeicolombia.com.co/?",
+		"IMAGEN": "imagen20",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "SOPORTE MOVIL",
+		"LINK": "https://conectados.com.co/group/guest/te-guio",
+		"IMAGEN": "imagen21",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "SARA",
+		"LINK": "http://100.126.20.149:8080/sara/login",
+		"IMAGEN": "imagen22",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "PERFIL SIM",
+		"LINK": "https://minisitiosclaro.claro.com.co/SimCardPerfil/?",
+		"IMAGEN": "imagen58",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "TRAZABILIDAD-LOGITECH",
+		"LINK": "https://appsnotus.logytechmobile.com/notusils/Trazabilidad/BusquedaServicios.aspx?",
+		"IMAGEN": "imagen23",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "HELPHSMARTPHONE",
+		"LINK": "https://www.helpforsmartphone.com/public/es-ES/devices/?",
+		"IMAGEN": "imagen24",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "ASCARD",
+		"LINK": "https://ascard.claro.com.co:8080/AdminWeb/pages/login/login.jsf?",
+		"IMAGEN": "imagen25",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "CMAX",
+		"LINK": "http://172.24.4.168/custcare_cmax//ErrorPage.su?",
+		"IMAGEN": "imagen26",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "SMO-ENRUTAMIENTO",
+		"LINK": "http://100.123.251.118:81/consulta_usuarios.aspx?",
+		"IMAGEN": "imagen27",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "PCRF-CONSUMO DE DATOS",
+		"LINK": "http://100.123.250.103:8083/User/InformacionConsumos.aspx",
+		"IMAGEN": "imagen28",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "CAV´s",
+		"LINK": "https://www.claro.com.co/personas/cavs/",
+		"IMAGEN": "imagen29",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "REPORTE ROBO O PERDIDA",
+		"LINK": "http://172.22.83.89/ESNRobados/WebForms/Default.aspx",
+		"IMAGEN": "imagen30",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "ROAMING",
+		"LINK": "https://www.claro.com.co/personas/servicios/servicios-moviles/roaming/",
+		"IMAGEN": "imagen44",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "LDI",
+		"LINK": "https://www.claro.com.co/personas/servicios/servicios-moviles/larga-distancia-internacional/",
+		"IMAGEN": "imagen45",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "CCI",
+		"LINK": "https://10.67.59.36:8443/",
+		"IMAGEN": "imagen56",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "PLANES",
+		"LINK": "https://conectados.com.co/inicio/-/knowledge_base_article/0000/143512127/maximized?p_p_auth=z9GhnTot",
+		"IMAGEN": "imagen55",
+		"AREA": "MOVIL"
+	},
+	{
+		"TITULO": "LEY 2300 GUIONES",
+		"LINK": "file://colbogfile30/claro_sac$/Agente/-----POLITICAS%20NUEVAS%20-%20VENTAS%20------/GUIONES%20LEY%202300/Ley%202300%20info%20guiones.pdf?",
+		"IMAGEN": "imagen31",
+		"AREA": "VENTAS",
+		"CLIPBOARD": true
+	},
+	{
+		"TITULO": "LECTURA CONTRATO (ULTRA-ADICIONALES-UPGRADE)",
+		"LINK": "file://colbogfile30/claro_sac$/Agente/-----POLITICAS%20NUEVAS%20-%20VENTAS%20------/CONTRATOS/HOGAR/GUION%20CONTRATO%20VENTAS%20%20UP%20GRADE%20Y%20ADICIONALES.pdf?",
+		"IMAGEN": "imagen32",
+		"AREA": "VENTAS",
+		"CLIPBOARD": true
+	},
+	{
+		"TITULO": "LECTURA CONTRATO (EMPAQUETAMIENTO PRINCIPALES)",
+		"LINK": "file://colbogfile30/claro_sac$/Agente/-----POLITICAS%20NUEVAS%20-%20VENTAS%20------/CONTRATOS/HOGAR/GUION%20CONTRATO%20VENTAS%20SERVICIOS%20FIJOS%20EMPAQUETAMIENTO.pdf?",
+		"IMAGEN": "imagen33",
+		"AREA": "VENTAS",
+		"CLIPBOARD": true
+	},
+	{
+		"TITULO": "LINK OTP",
+		"LINK": "http://172.24.216.156:8302/app-fraudes/",
+		"IMAGEN": "imagen34",
+		"AREA": "VENTAS"
+	},
+	{
+		"TITULO": "CONFRONTA",
+		"LINK": "https://miportafolio.transunion.co/nidp/idff/sso?id=MiPortafolioContract&sid=0&option=credential&sid=0&target=https%3A%2F%2Fmiportafolio.transunion.co%2Fsso-auth-server%2Flogin%3F",
+		"IMAGEN": "imagen35",
+		"AREA": "VENTAS"
+	},
+	{
+		"TITULO": "CRM NUEVO",
+		"LINK": "https://colbogcrm09/MIGRACION_CRM_CLARO/Atento/Pages/Login/login.php",
+		"IMAGEN": "imagen36",
+		"AREA": "VENTAS"
+	},
+	{
+		"TITULO": "CRM ANTIGUO",
+		"LINK": "http://172.17.50.22/CRMCLAROGENERAL/paginas/login.php?",
+		"IMAGEN": "imagen66",
+		"AREA": "VENTAS"
+	},
+	{
+		"TITULO": "GAP",
+		"LINK": "172.17.125.11/Simplex",
+		"IMAGEN": "imagen37",
+		"AREA": "OTROS"
+	},
+	{
+		"TITULO": "CAFÉ CLARO",
+		"LINK": "https://cafesite8.atento.com.co/cafe_claro_local/",
+		"IMAGEN": "imagen38",
+		"AREA": "OTROS"
+	},
+	{
+		"TITULO": "CONECTADOS",
+		"LINK": "https://conectados.com.co/inicio",
+		"IMAGEN": "imagen1",
+		"AREA": "OTROS"
+	},
+	{
+		"TITULO": "SUCCESS FACTOR",
+		"LINK": "https://performancemanager8.successfactors.com/login?company=comunicaci#/login",
+		"IMAGEN": "imagen2",
+		"AREA": "OTROS"
+	},
+	{
+		"TITULO": "SIUC",
+		"LINK": "https://universidadclaro.claro.com.co/public/siuc/",
+		"IMAGEN": "imagen65",
+		"AREA": "OTROS"
+	},
+	{
+		"TITULO": "ENDIRECTO",
+		"LINK": "http://172.16.183.76/endirecto/web/index.php/main/login?",
+		"IMAGEN": "imagen39",
+		"AREA": "OTROS"
+	},
+	{
+		"TITULO": "KACTUS",
+		"LINK": "https://cajerokactus.atento.com.co:8443/WebKactus/frmLogin.aspx?",
+		"IMAGEN": "imagen40",
+		"AREA": "OTROS"
+	},
+	{
+		"TITULO": "INTRANET",
+		"LINK": "http://intranet_atento.atento.com.co/?",
+		"IMAGEN": "imagen41",
+		"AREA": "OTROS"
+	},
+	{
+		"TITULO": "CAFÉ ACADEMIA",
+		"LINK": "https://academia.atento.com.co/academia/",
+		"IMAGEN": "imagen42",
+		"AREA": "OTROS"
+	},
+	{
+		"TITULO": "ECCUS",
+		"LINK": "http://172.16.183.59/tm_eccus/index.jsp",
+		"IMAGEN": "imagen46",
+		"AREA": "OTROS"
+	},
+	{
+		"TITULO": "QUALISTORE",
+		"LINK": "https://qualistore-multi.atento.com.br/portal/apps/app_qualistore_new/cerebro",
+		"IMAGEN": "imagen57",
+		"AREA": "OTROS"
+	},
+	{
+		"TITULO": "DESBLOQUEO RR",
+		"LINK": "https://convergencia.claro.com.co/sigma/app/index#/login",
+		"IMAGEN": "imagen61",
+		"AREA": "OTROS"
+	},
+	{
+		"TITULO": "ELIMINACION APP MI CLARO",
+		"LINK": "https://www.claroparatiprimero.co/landing-eliminacion/buscarUsuario",
+		"IMAGEN": "imagen63",
+		"AREA": "OTROS"
+	},
+	{
+		"TITULO": "ELIMINACION CLAROVIDEO",
+		"LINK": "https://portalottsamco.claro.com.co/login",
+		"IMAGEN": "imagen64",
+		"AREA": "OTROS"
+	},
+	{
+		"TITULO": "CLARO VIDEO",
+		"LINK": "https://conectados.com.co/inicio/-/knowledge_base_article/0000/20902882/maximized?p_p_auth=WwWkSulV",
+		"IMAGEN": "imagen48",
+		"AREA": "ADICIONALES"
+	},
+	{
+		"TITULO": "CLARO PAY",
+		"LINK": "https://conectados.com.co/inicio/-/knowledge_base_article/0000/85988530/maximized?p_p_auth=rHuDjYzM",
+		"IMAGEN": "imagen49",
+		"AREA": "ADICIONALES"
+	},
+	{
+		"TITULO": "MOTO CONECTADA",
+		"LINK": "https://conectados.com.co/inicio/-/knowledge_base_article/0000/87398724/maximized?p_p_auth=WwWkSulV",
+		"IMAGEN": "imagen50",
+		"AREA": "ADICIONALES"
+	},
+	{
+		"TITULO": "VEHICULO CONECTADO",
+		"LINK": "https://conectados.com.co/inicio/-/knowledge_base_article/0000/79378903/maximized?p_p_auth=rHuDjYzM",
+		"IMAGEN": "imagen51",
+		"AREA": "ADICIONALES"
+	},
+	{
+		"TITULO": "HOGAR SEGURO",
+		"LINK": "https://conectados.com.co/inicio/-/knowledge_base_article/0000/94759460/maximized?p_p_auth=WwWkSulV",
+		"IMAGEN": "imagen52",
+		"AREA": "ADICIONALES"
+	},
+	{
+		"TITULO": "T-RESUELVE MULTIASISTENCIA",
+		"LINK": "https://conectados.com.co/inicio/-/knowledge_base_article/0000/17774565/maximized?p_p_auth=rHuDjYzM",
+		"IMAGEN": "imagen53",
+		"AREA": "ADICIONALES"
+	}
+]

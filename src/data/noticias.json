@@ -1,0 +1,52 @@
+[
+	{
+		"id": "1",
+		"src": "Diapositiva1.JPG",
+		"alt": "Noticia 1"
+	},
+	{
+		"id": "2",
+		"src": "Diapositiva2.JPG",
+		"alt": "Noticia 2"
+	},
+	{
+		"id": "3",
+		"src": "Diapositiva3.JPG",
+		"alt": "Noticia 3"
+	},
+	{
+		"id": "4",
+		"src": "Diapositiva4.JPG",
+		"alt": "Noticia 4"
+	},
+	{
+		"id": "5",
+		"src": "Diapositiva5.JPG",
+		"alt": "Noticia 5"
+	},
+	{
+		"id": "6",
+		"src": "Diapositiva6.JPG",
+		"alt": "Noticia 6"
+	},
+	{
+		"id": "7",
+		"src": "Diapositiva7.JPG",
+		"alt": "Noticia 7"
+	},
+	{
+		"id": "8",
+		"src": "Diapositiva8.JPG",
+		"alt": "Noticia 8"
+	},
+	{
+		"id": "9",
+		"src": "Diapositiva9.JPG",
+		"alt": "Noticia 9"
+	},
+	{
+		"id": "10",
+		"src": "Diapositiva10.JPG",
+		"alt": "Noticia 10"
+	}
+]

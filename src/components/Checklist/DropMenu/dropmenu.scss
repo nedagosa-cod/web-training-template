@@ -1,0 +1,44 @@
+.dropmenu {
+	position: absolute;
+	background: #ffffff;
+	overflow: hidden;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	top: 20%;
+	left: 0;
+	z-index: 100;
+	width: 160px;
+	min-height: 24px;
+	padding: 0.4rem;
+	height: min-content;
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(66, 68, 90, 0.46);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(66, 68, 90, 0.46);
+	box-shadow: 2px 2px 5px 0px rgba(66, 68, 90, 0.46);
+	border-radius: 0.8rem;
+	-webkit-border-radius: 0.8rem;
+	-moz-border-radius: 0.8rem;
+	-ms-border-radius: 0.8rem;
+	-o-border-radius: 0.8rem;
+	&__handler {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0.5rem;
+		cursor: pointer;
+		padding: 0.5rem;
+		&:hover {
+			background: rgba(0, 0, 0, 0.1);
+			border-radius: 0.8rem;
+			-webkit-border-radius: 0.8rem;
+			-moz-border-radius: 0.8rem;
+			-ms-border-radius: 0.8rem;
+			-o-border-radius: 0.8rem;
+		}
+		&.danger {
+			color: #ff3333;
+			&:hover {
+				color: #ffffff;
+				background: #ff3333;
+			}
+		}
+	}
+}

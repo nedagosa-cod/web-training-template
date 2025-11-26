@@ -1,0 +1,258 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	vertical-align: baseline;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+#root {
+	overflow: hidden;
+	color-scheme: light dark;
+}
+
+#portal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+/* Se establece 1rem como 10px*/
+html {
+	/* font-size: 62.5%; */
+	scroll-behavior: smooth;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+	display: inline;
+	text-wrap: pretty;
+}
+
+@layer base {
+	:root {
+		--background: 0 0% 100%;
+		--foreground: 0 0% 3.9%;
+		--card: 0 0% 100%;
+		--card-foreground: 0 0% 3.9%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 0 0% 3.9%;
+		--primary: 356 100% 46%;
+		/* Rojo base - Color primario */
+		--primary-light: 356 80% 70%;
+		/* Más claro */
+		--primary-dark: 356 100% 30%;
+		/* Más oscuro */
+		--primary-soft: 356 60% 60% / 0.8;
+		/* Suave y translúcido */
+		--primary-accent: 356 100% 55%;
+		/* Más saturado y brillante */
+		--primary-foreground: 0 0% 100%;
+		/* Blanco para contraste */
+		--secondary: 43 98% 53%;
+		/* Amarillo/Naranja base */
+		--secondary-light: 43 80% 75%;
+		/* Más claro */
+		--secondary-dark: 43 100% 35%;
+		/* Más oscuro */
+		--secondary-soft: 43 60% 60% / 0.8;
+		/* Suave y translúcido */
+		--secondary-accent: 43 100% 60%;
+		/* Más saturado y brillante */
+		--secondary-foreground: 0 0% 10%;
+		/* Negro para contraste */
+		--muted: 0 0% 96.1%;
+		--muted-foreground: 0 0% 45.1%;
+		--accent: 0 85.7% 88.4%;
+		--accent-foreground: 0 0% 9%;
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 0 0% 98%;
+		--border: 0 0% 89.8%;
+		--input: 0 0% 89.8%;
+		--ring: 0 72.2% 50.6%;
+		--radius: 0.3rem;
+		--chart-1: 12 76% 61%;
+		--chart-2: 173 58% 39%;
+		--chart-3: 197 37% 24%;
+		--chart-4: 43 74% 66%;
+		--chart-5: 27 87% 67%;
+		--primarywt: 31 100% 50%;
+		--secondarywt: 215 100% 40.7%;
+		--gris: 210 40% 98%;
+	}
+
+	.dark {
+		--background: 0 0% 10%;
+		--foreground: 0 0% 98%;
+		--card: 0 0% 3.9%;
+		--card-foreground: 0 0% 98%;
+		--popover: 0 0% 3.9%;
+		--popover-foreground: 0 0% 98%;
+		--primary: 356 80% 40%;
+		/* Rojo base oscuro */
+		--primary-light: 356 80% 60%;
+		/* Más claro en dark */
+		--primary-dark: 356 100% 25%;
+		/* Más oscuro en dark */
+		--primary-soft: 356 60% 50% / 0.8;
+		/* Suave y translúcido en dark */
+		--primary-accent: 356 100% 50%;
+		/* Más saturado y brillante en dark */
+		--primary-foreground: 0 0% 100%;
+		/* Blanco para contraste */
+		--secondary: 43 80% 45%;
+		/* Amarillo/Naranja base oscuro */
+		--secondary-light: 43 80% 65%;
+		/* Más claro en dark */
+		--secondary-dark: 43 100% 25%;
+		/* Más oscuro en dark */
+		--secondary-soft: 43 60% 50% / 0.8;
+		/* Suave y translúcido en dark */
+		--secondary-accent: 43 100% 55%;
+		/* Más saturado y brillante en dark */
+		--secondary-foreground: 0 0% 100%;
+		/* Blanco para contraste */
+		--muted: 0 0% 14.9%;
+		--muted-foreground: 0 0% 63.9%;
+		--accent: 0 0% 14.9%;
+		--accent-foreground: 0 0% 98%;
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 0 0% 98%;
+		--border: 0 0% 14.9%;
+		--input: 0 0% 14.9%;
+		--ring: 0 72.2% 50.6%;
+		--chart-1: 220 70% 50%;
+		--chart-2: 160 60% 45%;
+		--chart-3: 30 80% 55%;
+		--chart-4: 280 65% 60%;
+		--chart-5: 340 75% 55%;
+		--primarywt: 215 100% 40.7%;
+		--secondarywt: 31 100% 50%;
+		--gris: 0, 0%, 100%, 0.3;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+
+	body {
+		@apply bg-background text-foreground;
+	}
+
+	.circles li {
+		bottom: -150px;
+	}
+}
+
+/* Animation delay utilities */
+@layer utilities {
+	.animate-delay-0 {
+		animation-delay: 0s;
+	}
+
+	.animate-delay-2s {
+		animation-delay: 2s;
+	}
+
+	.animate-delay-3s {
+		animation-delay: 3s;
+	}
+
+	.animate-delay-4s {
+		animation-delay: 4s;
+	}
+
+	.animate-delay-7s {
+		animation-delay: 7s;
+	}
+
+	.animate-delay-15s {
+		animation-delay: 15s;
+	}
+
+	/* Animation duration utilities */
+	.animate-duration-11s {
+		animation-duration: 11s;
+	}
+
+	.animate-duration-12s {
+		animation-duration: 12s;
+	}
+
+	.animate-duration-18s {
+		animation-duration: 18s;
+	}
+
+	.animate-duration-35s {
+		animation-duration: 35s;
+	}
+
+	.animate-duration-45s {
+		animation-duration: 45s;
+	}
+
+	.text-shadow-titles {
+		text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1),
+			0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+			0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Scroll personalizado */
+.custom-scroll::-webkit-scrollbar {
+	width: 8px;
+	/* Más delgado */
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+	background: transparent;
+	/* o un gris claro si prefieres */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+	background-color: #999;
+	/* Color del scroll */
+	border-radius: 4px;
+	border: 1px solid transparent;
+}
+
+.custom-scroll:hover::-webkit-scrollbar-thumb {
+	background-color: #666;
+	/* Más visible al hacer hover */
+}
+
+.dato-buscado.hide {
+	display: none;
+}
