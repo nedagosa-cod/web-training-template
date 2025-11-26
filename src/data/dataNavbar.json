@@ -1,7 +1,7 @@
 {
 	"SEGMENTS": [
 		{
-			"segment": "SWAT",
+			"segment": "CAMPAÑA",
 			"icon": "home"
 		}
 	],
@@ -15,7 +15,6 @@
 			"title": "Aplicativos web",
 			"route": "/appsweb",
 			"icon": "web",
-			"segments": ["SWAT"],
 			"dropDown": [
 				{
 					"title": "GO CONTACT",
