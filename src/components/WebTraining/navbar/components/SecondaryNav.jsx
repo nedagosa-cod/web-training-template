@@ -10,7 +10,7 @@ import NavItemAppsWeb from './NavItemAppsWeb'
 export function SecondaryNavbar({ data, activeSegment, className }) {
 	return (
 		<NavigationMenu className="w-full">
-			<NavigationMenuList className={`flex items-center w-full flex-wrap py-1 gap-1 ${className}`}>
+			<NavigationMenuList className={`flex flex-wrap gap-1 items-center py-1 w-full ${className}`}>
 				{data.map((item, i) => {
 					if (item.segments) {
 						return item.segments.map((segment, index) => {

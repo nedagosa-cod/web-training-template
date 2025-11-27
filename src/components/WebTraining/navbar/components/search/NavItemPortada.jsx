@@ -20,7 +20,9 @@ export default function NavItemPortada({ label, icon, submenu, containerRef }) {
 				title={label}
 				className="flex justify-center items-center px-4 py-1 w-fit h-[36px] text-primaryDark shadow-md bg-white hover:bg-primaryLight 2xl:w-40 rounded-full ring-2 ring-secondary">
 				<span className="flex justify-center items-center mr-2 w-4 h-4">{icon}</span>
-				<span className="hidden overflow-hidden text-xs font-bold truncate whitespace-normal xl:block">{label}</span>
+				<span className="hidden overflow-hidden text-xs font-bold text-center truncate whitespace-normal xl:block">
+					{label}
+				</span>
 			</NavigationMenuTrigger>
 			<NavigationMenuContent>
 				<ul className="grid gap-3 p-4 md:w-[400px] lg:w-[600px] lg:grid-cols-[.75fr_1fr]">
