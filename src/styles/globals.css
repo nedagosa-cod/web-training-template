@@ -55,98 +55,102 @@ p a {
 		--card-foreground: 0 0% 3.9%;
 		--popover: 0 0% 100%;
 		--popover-foreground: 0 0% 3.9%;
-		--primary: 356 100% 46%;
-		/* Rojo base - Color primario */
-		--primary-light: 356 80% 70%;
+		--primary: 195 100% 33%;
+		/* Azul Atento #0081A7 - Color primario corporativo */
+		--primary-light: 195 80% 50%;
 		/* Más claro */
-		--primary-dark: 356 100% 30%;
+		--primary-dark: 195 100% 25%;
 		/* Más oscuro */
-		--primary-soft: 356 60% 60% / 0.8;
+		--primary-soft: 195 60% 40% / 0.8;
 		/* Suave y translúcido */
-		--primary-accent: 356 100% 55%;
+		--primary-accent: 195 100% 38%;
 		/* Más saturado y brillante */
 		--primary-foreground: 0 0% 100%;
 		/* Blanco para contraste */
-		--secondary: 43 98% 53%;
-		/* Amarillo/Naranja base */
-		--secondary-light: 43 80% 75%;
+		--secondary: 28 97% 48%;
+		/* Naranja Atento #F17604 - Color secundario */
+		--secondary-light: 28 90% 65%;
 		/* Más claro */
-		--secondary-dark: 43 100% 35%;
+		--secondary-dark: 28 100% 35%;
 		/* Más oscuro */
-		--secondary-soft: 43 60% 60% / 0.8;
+		--secondary-soft: 28 80% 55% / 0.8;
 		/* Suave y translúcido */
-		--secondary-accent: 43 100% 60%;
+		--secondary-accent: 28 100% 55%;
 		/* Más saturado y brillante */
-		--secondary-foreground: 0 0% 10%;
-		/* Negro para contraste */
-		--muted: 0 0% 96.1%;
-		--muted-foreground: 0 0% 45.1%;
-		--accent: 0 85.7% 88.4%;
-		--accent-foreground: 0 0% 9%;
+		--secondary-foreground: 0 0% 100%;
+		/* Blanco para contraste */
+		--muted: 195 20% 96.1%;
+		--muted-foreground: 195 10% 45.1%;
+		--accent: 184 100% 36%;
+		/* Azul secundario Atento #00AFB9 */
+		--accent-foreground: 0 0% 100%;
 		--destructive: 0 84.2% 60.2%;
 		--destructive-foreground: 0 0% 98%;
-		--border: 0 0% 89.8%;
-		--input: 0 0% 89.8%;
-		--ring: 0 72.2% 50.6%;
+		--border: 195 20% 89.8%;
+		--input: 195 20% 89.8%;
+		--ring: 195 72.2% 50.6%;
 		--radius: 0.3rem;
-		--chart-1: 12 76% 61%;
-		--chart-2: 173 58% 39%;
-		--chart-3: 197 37% 24%;
-		--chart-4: 43 74% 66%;
-		--chart-5: 27 87% 67%;
-		--primarywt: 31 100% 50%;
-		--secondarywt: 215 100% 40.7%;
-		--gris: 210 40% 98%;
+		--chart-1: 195 76% 61%;
+		--chart-2: 184 58% 39%;
+		--chart-3: 28 97% 48%;
+		--chart-4: 5 80% 85%;
+		/* Rosa claro Atento #F8B9B5 */
+		--chart-5: 195 87% 67%;
+		--primarywt: 195 100% 50%;
+		--secondarywt: 28 100% 50%;
+		--gris: 195 20% 98%;
 	}
 
 	.dark {
-		--background: 0 0% 10%;
+		--background: 195 30% 10%;
 		--foreground: 0 0% 98%;
-		--card: 0 0% 3.9%;
+		--card: 195 30% 3.9%;
 		--card-foreground: 0 0% 98%;
-		--popover: 0 0% 3.9%;
+		--popover: 195 30% 3.9%;
 		--popover-foreground: 0 0% 98%;
-		--primary: 356 80% 40%;
-		/* Rojo base oscuro */
-		--primary-light: 356 80% 60%;
+		--primary: 195 80% 45%;
+		/* Azul Atento oscuro */
+		--primary-light: 195 80% 60%;
 		/* Más claro en dark */
-		--primary-dark: 356 100% 25%;
+		--primary-dark: 195 100% 30%;
 		/* Más oscuro en dark */
-		--primary-soft: 356 60% 50% / 0.8;
+		--primary-soft: 195 60% 50% / 0.8;
 		/* Suave y translúcido en dark */
-		--primary-accent: 356 100% 50%;
+		--primary-accent: 195 100% 50%;
 		/* Más saturado y brillante en dark */
 		--primary-foreground: 0 0% 100%;
 		/* Blanco para contraste */
-		--secondary: 43 80% 45%;
-		/* Amarillo/Naranja base oscuro */
-		--secondary-light: 43 80% 65%;
+		--secondary: 28 90% 55%;
+		/* Naranja Atento oscuro */
+		--secondary-light: 28 90% 70%;
 		/* Más claro en dark */
-		--secondary-dark: 43 100% 25%;
+		--secondary-dark: 28 100% 40%;
 		/* Más oscuro en dark */
-		--secondary-soft: 43 60% 50% / 0.8;
+		--secondary-soft: 28 80% 60% / 0.8;
 		/* Suave y translúcido en dark */
-		--secondary-accent: 43 100% 55%;
+		--secondary-accent: 28 100% 60%;
 		/* Más saturado y brillante en dark */
 		--secondary-foreground: 0 0% 100%;
 		/* Blanco para contraste */
-		--muted: 0 0% 14.9%;
-		--muted-foreground: 0 0% 63.9%;
-		--accent: 0 0% 14.9%;
+		--muted: 195 20% 14.9%;
+		--muted-foreground: 195 10% 63.9%;
+		--accent: 184 100% 40%;
+		/* Azul secundario Atento #00AFB9 */
 		--accent-foreground: 0 0% 98%;
 		--destructive: 0 62.8% 30.6%;
 		--destructive-foreground: 0 0% 98%;
-		--border: 0 0% 14.9%;
-		--input: 0 0% 14.9%;
-		--ring: 0 72.2% 50.6%;
-		--chart-1: 220 70% 50%;
-		--chart-2: 160 60% 45%;
-		--chart-3: 30 80% 55%;
-		--chart-4: 280 65% 60%;
-		--chart-5: 340 75% 55%;
-		--primarywt: 215 100% 40.7%;
-		--secondarywt: 31 100% 50%;
-		--gris: 0, 0%, 100%, 0.3;
+		--border: 195 20% 14.9%;
+		--input: 195 20% 14.9%;
+		--ring: 195 72.2% 50.6%;
+		--chart-1: 195 70% 50%;
+		--chart-2: 184 60% 45%;
+		--chart-3: 28 97% 55%;
+		--chart-4: 5 80% 75%;
+		/* Rosa claro Atento #F8B9B5 */
+		--chart-5: 195 75% 60%;
+		--primarywt: 195 100% 50%;
+		--secondarywt: 28 100% 50%;
+		--gris: 210 20% 100% / 0.3;
 	}
 }
 
