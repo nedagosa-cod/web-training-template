@@ -1,15 +1,9 @@
-import { Button } from '@/components/ui/button'
-
-import { BookOpenCheck, LogOut, Palette, Settings, SpellCheck, UserCog } from 'lucide-react'
-import { useContext, useEffect, useState } from 'react'
-import GlobalContext from '@/context/GlobalContext'
-import { Link } from 'react-router-dom'
-import { useTheme } from '@/context/ThemeContext'
-
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
+import { BookOpenCheck, LogOut, Palette, Settings, UserCog } from 'lucide-react'
 import { Separator } from '@/components/ui/separator'
-import ExcelDrawer from './DDBBDrawer'
-import { NotesSheet } from '../../notas/MisNotas'
+import { useTheme } from '@/context/ThemeContext'
+import { Button } from '@/components/ui/button'
+import { useEffect, useState } from 'react'
 import readXlsxFile from 'read-excel-file'
 
 export default function ConfigMenu() {
@@ -52,7 +46,7 @@ export default function ConfigMenu() {
 		<Popover>
 			<PopoverTrigger>
 				<div className="p-1 my-1 bg-white rounded cursor-pointer">
-					<Settings className="w-6 h-6 text-primary" />
+					<Settings className="w-6 h-6 text-secondary" />
 				</div>
 			</PopoverTrigger>
 			<PopoverContent>
@@ -70,7 +64,6 @@ export default function ConfigMenu() {
 								onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
 								Cambiar de tema <Palette className="w-4 h-4 text-primary" />
 							</Button>
-							<ExcelDrawer />
 							<Button variant="ghost" className="flex justify-between w-full">
 								Reportar un problema <UserCog className="w-4 h-4 text-primary" />
 							</Button>
@@ -79,7 +72,13 @@ export default function ConfigMenu() {
 								Guia Web Training <BookOpenCheck className="w-4 h-4 text-primary" />
 							</Button>
 							<Separator />
-							<Button variant="ghost" className="flex justify-between w-full">
+
+							<Button
+								variant="ghost"
+								className="flex justify-between w-full"
+								onClick={() => {
+									window.close()
+								}}>
 								Salir <LogOut className="w-4 h-4 text-primary" />
 							</Button>
 						</div>

@@ -97,6 +97,8 @@ sendForm.addEventListener('submit', e => {
 			if (dataAccesos.find(item => item.CEDULA == e.target.elements[0].value)) {
 				const user = dataAccesos.find(item => item.CEDULA == e.target.elements[0].value)
 				root.setAttribute('active-session', user.ASESOR)
+				// Guardar el nombre del asesor en localStorage para persistencia
+				localStorage.setItem('userAsesor', user.ASESOR)
 				const data = {
 					usuario: e.target.elements[0].value,
 					campana: e.target.elements[1].value,

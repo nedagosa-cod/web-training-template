@@ -77,7 +77,7 @@ export function NotesSheet() {
 		<Sheet open={isOpen} onOpenChange={setIsOpen}>
 			<SheetTrigger asChild>
 				<Button variant="ghost" className="p-1 w-8 h-8 bg-white rounded cursor-pointer">
-					<NotebookPen className="w-4 h-4 text-primary" />
+					<NotebookPen className="w-4 h-4 text-secondary" />
 				</Button>
 			</SheetTrigger>
 			<SheetContent className="overflow-y-auto w-full sm:max-w-md md:max-w-lg" side="right">

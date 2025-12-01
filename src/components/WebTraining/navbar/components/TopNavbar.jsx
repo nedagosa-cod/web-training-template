@@ -4,14 +4,14 @@ import { Button } from '@/components/ui/button'
 import AdminButton from './AdminButton'
 import { NotesSheet } from '../../notas/MisNotas'
 import { Link } from 'react-router-dom'
-import MultiTimer from '@/components/MultiTimer/MultiTimer'
+// import MultiTimer from '@/components/MultiTimer/MultiTimer'
 
 const icons = {
-	home: <Home className="w-4 h-4" />,
-	checklist: <Menu className="w-4 h-4" />,
-	note: <Info className="w-4 h-4" />,
-	tipify: <Diamond className="w-4 h-4" />,
-	admin: <User2 className="w-4 h-4" />,
+	home: <Home className="w-4 h-4 text-secondary" />,
+	checklist: <Menu className="w-4 h-4 text-secondary" />,
+	note: <Info className="w-4 h-4 text-secondary" />,
+	tipify: <Diamond className="w-4 h-4 text-secondary" />,
+	admin: <User2 className="w-4 h-4 text-secondary" />,
 }
 export default function TopNavbar({ segmentos, activeSegment, setActiveSegment }) {
 	function slugify(text) {
@@ -57,9 +57,9 @@ export default function TopNavbar({ segmentos, activeSegment, setActiveSegment }
 							to="/corrector"
 							variant="ghost"
 							className="flex justify-center items-center p-1 w-8 h-8 bg-white rounded cursor-pointer">
-							<SpellCheck className="w-5 h-5 text-primary" />
+							<SpellCheck className="w-5 h-5 text-secondary" />
 						</Link>
-						<MultiTimer />
+						{/* <MultiTimer /> */}
 						<AdminButton />
 						<ConfigMenu />
 					</div>

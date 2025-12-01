@@ -24,9 +24,9 @@ const ScriptDesc = ({ children, check, location, updateUserCheck }) => {
 
 	return (
 		<Card
-			className="flex flex-col items-center justify-center bg-sky-100 rounded-full py-2 px-4 cursor-pointer font-bold border border-blue-500 w-full shadow-md hover:shadow-lg my-4"
+			className="flex flex-col justify-center items-center px-4 py-2 my-4 w-full font-bold bg-sky-100 rounded-full border border-blue-500 shadow-md cursor-pointer hover:shadow-lg"
 			onClick={() => copyClipBoard(scripEdit.current.innerText)}>
-			<CardContent className="w-full flex flex-col items-center p-0">
+			<CardContent className="flex flex-col items-center p-0 w-full">
 				<svg
 					viewBox="0 0 1024 1024"
 					className="w-10 icon"
@@ -65,7 +65,7 @@ const ScriptDesc = ({ children, check, location, updateUserCheck }) => {
 							fill="#37474F"></path>
 					</g>
 				</svg>
-				<Separator className="bg-blue-500 my-1 w-3/4" />
+				<Separator className="my-1 w-3/4 bg-blue-500" />
 				{editChElement &&
 				areObjectsEqual(locationEl, {
 					check,
@@ -81,7 +81,7 @@ const ScriptDesc = ({ children, check, location, updateUserCheck }) => {
 						{Array.isArray(editedValue) ? (
 							editedValue.map((text, i) => (
 								<p
-									className="text-md font-normal italic text-center"
+									className="italic font-normal text-center text-md"
 									key={i}
 									dangerouslySetInnerHTML={{
 										__html: text.props.dangerouslySetInnerHTML.__html.replace(/<p><\/p>/g, '<br/>'),

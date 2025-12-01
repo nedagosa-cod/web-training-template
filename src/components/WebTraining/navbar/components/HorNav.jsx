@@ -216,177 +216,192 @@ const HorNav = ({ activeSegment }) => {
 	})
 	return (
 		<div className="w-full hornav">
-			<nav className="flex relative justify-between items-center px-5 w-full h-20 bg-background hornav__links">
-				{/* Dialog de navegación completa */}
-				<Dialog>
-					<DialogTrigger className="flex justify-center items-center px-1 mx-1 -ml-4 w-8 h-8 rounded-full ring-2 cursor-pointer bg-primary ring-secondary">
-						<SquareMenu className="w-3 h-3 font-bold text-white" />
-					</DialogTrigger>
-					<DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
-						<DialogHeader>
-							<DialogTitle className="flex items-center space-x-2">
-								<SquareMenu className="w-5 h-5" />
-								<span>Navegación Completa</span>
-							</DialogTitle>
-							<p className="text-sm text-muted-foreground">
-								Accede a todas las secciones y herramientas organizadas por segmento
-							</p>
-						</DialogHeader>
+			<nav className="flex relative justify-between items-center px-2 w-full h-20 bg-background hornav__links">
+				{/* botones de navegación */}
+				<div className="flex items-center px-2 space-x-2 w-full">
+					{/* Dialog de navegación completa */}
+					<Dialog>
+						<DialogTrigger className="flex justify-center items-center w-8 h-8 rounded-full ring-2 cursor-pointer bg-primary ring-secondary">
+							<SquareMenu className="w-3 h-3 font-bold text-white" />
+						</DialogTrigger>
+						<DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+							<DialogHeader>
+								<DialogTitle className="flex items-center space-x-2">
+									<SquareMenu className="w-5 h-5" />
+									<span>Navegación Completa</span>
+								</DialogTitle>
+								<p className="text-sm text-muted-foreground">
+									Accede a todas las secciones y herramientas organizadas por segmento
+								</p>
+							</DialogHeader>
 
-						<div className="mt-4 space-y-6">
-							{Object.entries(getNavbarBySegments()).map(([segment, categories]) => {
-								const hasItems = categories.simple.length > 0 || categories.dropdown.length > 0
-								if (!hasItems) return null
+							<div className="mt-4 space-y-6">
+								{Object.entries(getNavbarBySegments()).map(([segment, categories]) => {
+									const hasItems = categories.simple.length > 0 || categories.dropdown.length > 0
+									if (!hasItems) return null
 
-								return (
-									<div key={segment}>
-										<div className="flex items-center mb-4 space-x-2">
-											<Badge variant={segment === activeSegment ? 'default' : 'secondary'} className="text-sm">
-												{segment}
-											</Badge>
-											{segment === activeSegment && (
-												<span className="text-xs text-muted-foreground">(Segmento activo)</span>
-											)}
-										</div>
+									return (
+										<div key={segment}>
+											<div className="flex items-center mb-4 space-x-2">
+												<Badge variant={segment === activeSegment ? 'default' : 'secondary'} className="text-sm">
+													{segment}
+												</Badge>
+												{segment === activeSegment && (
+													<span className="text-xs text-muted-foreground">(Segmento activo)</span>
+												)}
+											</div>
 
-										<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-											{/* Columna de elementos simples */}
-											{categories.simple.length > 0 && (
-												<div>
-													<h4 className="flex items-center mb-3 text-sm font-medium text-muted-foreground">
-														<span className="mr-2 w-2 h-2 rounded-full bg-primary"></span>
-														Navegación Directa
-													</h4>
-													<div className="space-y-2">
-														{categories.simple.map((item, index) => renderNavItem(item, `simple-${index}`))}
+											<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+												{/* Columna de elementos simples */}
+												{categories.simple.length > 0 && (
+													<div>
+														<h4 className="flex items-center mb-3 text-sm font-medium text-muted-foreground">
+															<span className="mr-2 w-2 h-2 rounded-full bg-primary"></span>
+															Navegación Directa
+														</h4>
+														<div className="space-y-2">
+															{categories.simple.map((item, index) => renderNavItem(item, `simple-${index}`))}
+														</div>
 													</div>
-												</div>
-											)}
+												)}
 
-											{/* Columna de elementos con dropdown */}
-											{categories.dropdown.length > 0 && (
-												<div>
-													<h4 className="flex items-center mb-3 text-sm font-medium text-muted-foreground">
-														<span className="mr-2 w-2 h-2 rounded-full bg-secondary"></span>
-														Menús Expandibles
-													</h4>
-													<div className="space-y-3">
-														{categories.dropdown.map((item, index) => renderNavItem(item, `dropdown-${index}`))}
+												{/* Columna de elementos con dropdown */}
+												{categories.dropdown.length > 0 && (
+													<div>
+														<h4 className="flex items-center mb-3 text-sm font-medium text-muted-foreground">
+															<span className="mr-2 w-2 h-2 rounded-full bg-secondary"></span>
+															Menús Expandibles
+														</h4>
+														<div className="space-y-3">
+															{categories.dropdown.map((item, index) => renderNavItem(item, `dropdown-${index}`))}
+														</div>
 													</div>
-												</div>
-											)}
+												)}
+											</div>
+
+											{segment !== 'GLOBAL' && <Separator className="mt-6" />}
 										</div>
+									)
+								})}
+							</div>
 
-										{segment !== 'GLOBAL' && <Separator className="mt-6" />}
-									</div>
-								)
-							})}
-						</div>
+							<div className="p-4 mt-6 rounded-lg bg-muted/50">
+								<p className="text-xs text-center text-muted-foreground">
+									💡 Tip: Haz clic en los íconos de flecha para navegar directamente a cada sección
+								</p>
+							</div>
+						</DialogContent>
+					</Dialog>
+					<div className="flex relative justify-between items-center w-full text-white bg-gradient-to-r rounded-full from-primary/70 to-primary/70 hornav__links--container dark:bg-primary">
+						<div className="flex overflow-hidden justify-between items-center mr-2 h-[56px] md:w-4/5  w-full rounded-full bg-gradient-to-r from-primaryDark to-primary">
+							<div
+								onClick={scrollLeft}
+								className="flex justify-center items-center w-14 h-full ring-1 cursor-pointer bg-primary ring-accent">
+								<SkipBack />
+							</div>
+							<NavigationMenu
+								ref={scrollContainerRef}
+								onWheel={handleScroll}
+								className="flex overflow-y-hidden gap-5 justify-around items-center w-full h-14 text-sm list-none whitespace-nowrap scroll-smooth overflow-x-auto [&::-webkit-scrollbar]:h-1 [&::-webkit-scrollbar-track]:bg-primaryLight [&::-webkit-scrollbar-thumb]:bg-primary dark:[&::-webkit-scrollbar-track]:bg-neutral-700  dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 static">
+								<NavigationMenuList className="gap-2 px-2">
+									{DATANAV.NAVBAR.map((item, i) => {
+										if (item.segments) {
+											return item.segments.map((segment, index) => {
+												if (!segment.includes(activeSegment)) return null
 
-						<div className="p-4 mt-6 rounded-lg bg-muted/50">
-							<p className="text-xs text-center text-muted-foreground">
-								💡 Tip: Haz clic en los íconos de flecha para navegar directamente a cada sección
-							</p>
-						</div>
-					</DialogContent>
-				</Dialog>
-				<div className="flex relative justify-between items-center w-4/5 text-white bg-gradient-to-r rounded-full sm:w-4/5 md:w-3/4 from-primary/70 to-primary/70 hornav__links--container max-w-4/5 dark:bg-primary">
-					<div className="flex overflow-hidden justify-between items-center mr-2 h-[56px] md:w-4/5  w-full rounded-full bg-gradient-to-r from-primaryDark to-primary">
-						<div
-							onClick={scrollLeft}
-							className="flex justify-center items-center w-14 h-full ring-1 cursor-pointer bg-primary ring-accent">
-							<SkipBack />
-						</div>
-						<NavigationMenu
-							ref={scrollContainerRef}
-							onWheel={handleScroll}
-							className="flex overflow-y-hidden gap-5 justify-around items-center w-full h-14 text-sm list-none whitespace-nowrap scroll-smooth overflow-x-auto [&::-webkit-scrollbar]:h-1 [&::-webkit-scrollbar-track]:bg-primaryLight [&::-webkit-scrollbar-thumb]:bg-primary dark:[&::-webkit-scrollbar-track]:bg-neutral-700  dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 static">
-							<NavigationMenuList className="gap-2 px-2">
-								{DATANAV.NAVBAR.map((item, i) => {
-									if (item.segments) {
-										return item.segments.map((segment, index) => {
-											if (!segment.includes(activeSegment)) return null
+												// Caso especial: Aplicativos web
+												if (item.title === 'Aplicativos web' && item.dropDown) {
+													return (
+														<NavItemAppsWeb
+															key={`${i}-${index}`}
+															label={item.title}
+															icon={icons[item.icon]}
+															submenu={item.dropDown}
+														/>
+													)
+												}
 
-											// Caso especial: Aplicativos web
-											if (item.title === 'Aplicativos web' && item.dropDown) {
+												// Menú desplegable con portada
+												if (item.dropDown && item.portada) {
+													return (
+														<NavItemPortada
+															key={`${i}-${index}`}
+															label={item.title}
+															icon={icons[item.icon]}
+															submenu={item.dropDown}
+														/>
+													)
+												}
+
+												// Menú desplegable sin portada
+												if (item.dropDown) {
+													return (
+														<NavItemLista
+															key={`${i}-${index}`}
+															components={item.dropDown}
+															label={item.title}
+															icon={icons[item.icon]}
+														/>
+													)
+												}
+
+												// Menú regular
+												return (
+													<NavItemRegular
+														key={`${i}-${index}`}
+														label={item.title}
+														href={`#${item.route}`}
+														icon={icons[item.icon]}
+													/>
+												)
+											})
+										}
+
+										// Si no hay segments
+										if (item.dropDown) {
+											if (item.title === 'Aplicativos web') {
 												return (
 													<NavItemAppsWeb
-														key={`${i}-${index}`}
+														key={`${i}-${item.title}`}
 														label={item.title}
 														icon={icons[item.icon]}
 														submenu={item.dropDown}
 													/>
 												)
 											}
-
-											// Menú desplegable con portada
-											if (item.dropDown && item.portada) {
-												return (
-													<NavItemPortada
-														key={`${i}-${index}`}
-														label={item.title}
-														icon={icons[item.icon]}
-														submenu={item.dropDown}
-													/>
-												)
-											}
-
-											// Menú desplegable sin portada
-											if (item.dropDown) {
-												return (
-													<NavItemLista
-														key={`${i}-${index}`}
-														components={item.dropDown}
-														label={item.title}
-														icon={icons[item.icon]}
-													/>
-												)
-											}
-
-											// Menú regular
 											return (
-												<NavItemRegular
-													key={`${i}-${index}`}
+												<NavItemLista
+													key={`${i}-${item.title}`}
+													components={item.dropDown}
 													label={item.title}
-													href={`#${item.route}`}
 													icon={icons[item.icon]}
 												/>
 											)
-										})
-									}
+										}
 
-									// Si no hay segments
-									if (item.dropDown) {
 										return (
-											<NavItemLista
+											<NavItemRegular
 												key={`${i}-${item.title}`}
-												components={item.dropDown}
 												label={item.title}
+												href={`#${item.route}`}
 												icon={icons[item.icon]}
 											/>
 										)
-									}
-
-									return (
-										<NavItemRegular
-											key={`${i}-${item.title}`}
-											label={item.title}
-											href={`#${item.route}`}
-											icon={icons[item.icon]}
-										/>
-									)
-								})}
-							</NavigationMenuList>
-						</NavigationMenu>
-						<div
-							onClick={scrollRight}
-							className="flex justify-center items-center w-14 h-full ring-1 cursor-pointer bg-primaryDark ring-accent">
-							<SkipForward />
+									})}
+								</NavigationMenuList>
+							</NavigationMenu>
+							<div
+								onClick={scrollRight}
+								className="flex justify-center items-center w-14 h-full ring-1 cursor-pointer bg-primaryDark ring-accent">
+								<SkipForward />
+							</div>
 						</div>
+						<SpotlightSearch />
 					</div>
-					<SpotlightSearch />
 				</div>
-				<div className="flex justify-end items-center space-x-4 w-1/4 h-full">
+
+				{/* parte derecha del navbar */}
+				<div className="flex justify-end items-center space-x-4 h-full">
 					<div className="w-1 h-12 rounded bg-gradient-to-b from-primary to-[hsl(var(--primary-dark))] mx-1"></div>
 					<div className="flex items-center h-full">
 						<div className="flex items-center">

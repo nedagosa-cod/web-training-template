@@ -2,7 +2,7 @@ import { toast } from 'sonner'
 import { copy } from 'clipboard-copy'
 export const copyClipBoard = async value => {
 	try {
-		await copy('Texto a copiar')
+		await copy(value)
 		toast.success('Contenido copiado al portapapeles', {
 			description: 'Presiona Ctrl + V para pegar',
 		})
