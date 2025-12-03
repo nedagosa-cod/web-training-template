@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { cn } from '@/lib/utils'
-import slidesData from '@/data/noticias.json'
 import { FullScreenImage } from './components/FullScreenImage'
 import { SlideNavigation } from './components/SlideNavigation'
 
@@ -18,23 +17,33 @@ export const ImageSlider = ({ autoPlayInterval = 4000, className }) => {
 			setIsLoading(true)
 			const validImages = []
 
-			for (const slide of slidesData) {
-				try {
-					// Crear una promesa para verificar si la imagen existe
-					const imageExists = await new Promise(resolve => {
-						const img = new Image()
-						img.onload = () => resolve(true)
-						img.onerror = () => resolve(false)
-						img.src = `BASES_XxxXxx/NOTICIAS/${slide.src}`
-					})
+			// si se requieren mas de 5 imagenes, se debe cambiar el numero de iteraciones
+			for (let index = 0; index < 5; index++) {
+				const formats = ['JPG', 'jpg', 'PNG', 'png']
+				let found = false
 
-					if (imageExists) {
-						validImages.push(slide)
+				for (const ext of formats) {
+					if (found) break
+					try {
+						const imageExists = await new Promise(resolve => {
+							const img = new Image()
+							img.onload = () => resolve(true)
+							img.onerror = () => resolve(false)
+							img.src = `BASES_XxxXxx/NOTICIAS/Diapositiva${index + 1}.${ext}`
+						})
+
+						if (imageExists) {
+							validImages.push({ id: index + 1, src: `Diapositiva${index + 1}.${ext}`, alt: `Noticia ${index + 1}` })
+							found = true
+						}
+					} catch (error) {
+						console.error(`Error al verificar imagen Diapositiva:`, error)
 					}
-				} catch (error) {
-					console.warn(`Error al verificar imagen ${slide.src}:`, error)
 				}
 			}
+			console.clear()
+			console.warn(`Consola limpiada por imagenes no validas`)
+			console.log('Imagenes Recibidas:', validImages)
 
 			setValidSlides(validImages)
 			setIsLoading(false)
@@ -125,7 +134,7 @@ export const ImageSlider = ({ autoPlayInterval = 4000, className }) => {
 			<div
 				className={cn(
 					'overflow-hidden relative rounded-lg border border-border',
-					'w-full max-w-full h-[50vh]',
+					'w-full max-w-full h-[45vh]',
 					'cursor-pointer group',
 					className
 				)}
@@ -138,10 +147,14 @@ export const ImageSlider = ({ autoPlayInterval = 4000, className }) => {
 						<div
 							key={slide.id}
 							className={cn(
-								'absolute inset-0 h-full w-full transition-opacity duration-700',
+								'absolute inset-0 h-full w-full transition-opacity duration-700 bg-white',
 								index === currentIndex ? 'opacity-100' : 'opacity-0 pointer-events-none'
 							)}>
-							<img src={`BASES_XxxXxx/NOTICIAS/${slide.src}`} alt={slide.alt} className="object-cover w-full h-full" />
+							<img
+								src={`BASES_XxxXxx/NOTICIAS/${slide.src}`}
+								alt={slide.alt}
+								className="object-contain w-full h-full"
+							/>
 						</div>
 					))}
 				</div>

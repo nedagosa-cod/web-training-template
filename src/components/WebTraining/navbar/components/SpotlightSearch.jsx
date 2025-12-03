@@ -86,6 +86,13 @@ const SpotlightSearch = () => {
 		// eslint-disable-next-line
 	}, [open])
 
+	// elimina el focus del buscador para que no se vea afectado control de accesos al show command
+	useEffect(() => {
+		if (document.activeElement instanceof HTMLElement) {
+			document.activeElement.blur()
+		}
+	}, [])
+
 	return (
 		<section className="relative">
 			<div className="grid relative z-10 place-content-center p-2 bg-gradient-to-r rounded-full hornav__links--search from-primaryDark to-primaryDark">

@@ -14,7 +14,6 @@ import { loadExcelData } from '../../../../js/LoadExcelData'
 import Loader1 from '@/components/Loaders/Loader1'
 
 export default function NavItemAppsWeb({ label, icon, submenu }) {
-	console.log('HOLAAAA')
 	const navigate = useNavigate()
 	const triggerRef = useRef(null)
 	const [dataDb, setDataDb] = useState([])

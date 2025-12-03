@@ -181,7 +181,7 @@ export default function VoiceTranscriptionApp() {
 	}
 
 	return (
-		<div className="min-h-screen bg-gradient-to-br via-blue-50 to-indigo-50 from-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+		<div className="h-full bg-gradient-to-br via-blue-50 to-indigo-50 from-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
 			<div className="container px-4 py-8 mx-auto max-w-7xl">
 				{/* Header */}
 				<div className="mb-8 text-center">

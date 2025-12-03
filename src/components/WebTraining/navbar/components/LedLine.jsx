@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 export default function LEDLine() {
 	const [intensity, setIntensity] = useState(0)
-	const [primaryColor, setPrimaryColor] = useState('hsl(195, 100%, 33%)')
+	const [primaryColor, setPrimaryColor] = useState()
 
 	useEffect(() => {
 		// Obtener el color primary desde las variables CSS
