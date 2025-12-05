@@ -158,15 +158,51 @@ const initSession = () => {
 
 		document.addEventListener('keydown', handleKeyPress)
 	}
+	const getControlDeAccesos = async () => {
+		const rutaNoTocar = `./BASES_XxxXxx/NO_TOCAR.xlsx`
+		const rutaNoTocarCompleta = new URL(rutaNoTocar, window.location.href).href
+
+		const response = await fetch(rutaNoTocarCompleta)
+			.then(response => response.blob())
+			.then(async data => {
+				return readXlsxFile(data)
+			})
+			.then(async data => {
+				const [headerRow, ...dataRows] = data
+				const objetoDeFila = dataRows.map(row => {
+					const objeto = {}
+					row.forEach((value, index) => {
+						objeto[headerRow[index]] = value
+					})
+					return objeto
+				})
+
+				const controlDeAccesos = objetoDeFila.find(item => item.CLAVE == 'control de accesos')
+				if (controlDeAccesos) {
+					return controlDeAccesos.VALOR
+				} else {
+					throw new Error('La clave control de accesos no existe en la base de no tocar')
+				}
+			})
+
+			.catch(error => {
+				console.log('Error al cargar la base de no tocar', error)
+			})
+
+		return response
+	}
 
 	// Inicializar el detector de comando oculto
 	initHiddenCommand()
 
 	// Agregar el event listener del formulario
-	sendForm.addEventListener('submit', e => {
+	sendForm.addEventListener('submit', async e => {
 		e.preventDefault()
 
+		const controlDeAccesos = await getControlDeAccesos()
+
 		const ruta = `./BASES_XxxXxx/BASE_PERSONAL.xlsx`
+
 		const rutaCompleta = new URL(ruta, window.location.href).href
 		fetch(rutaCompleta)
 			.then(response => response.blob())
@@ -212,7 +248,7 @@ const initSession = () => {
 						loader: true,
 					})
 					// https://retoolapi.dev/luBbwU/data
-					fetch('http://colbogweb26:8083/Webservices_Simulador/api/main/insUpdTransaccion', {
+					fetch(controlDeAccesos, {
 						method: 'POST',
 						headers: { 'Content-Type': 'application/json' },
 						body: JSON.stringify(data),

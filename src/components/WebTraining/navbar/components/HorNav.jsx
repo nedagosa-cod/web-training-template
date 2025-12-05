@@ -216,9 +216,9 @@ const HorNav = ({ activeSegment }) => {
 	})
 	return (
 		<div className="w-full hornav">
-			<nav className="flex relative justify-between items-center px-2 w-full h-20 bg-background hornav__links">
+			<nav className="flex overflow-hidden relative justify-between items-center px-2 max-w-full h-20 bg-background hornav__links">
 				{/* botones de navegación */}
-				<div className="flex items-center px-2 space-x-2 w-full">
+				<div className="flex flex-1 col-span-2 items-center px-2 space-x-2 min-w-0">
 					{/* Dialog de navegación completa */}
 					<Dialog>
 						<DialogTrigger className="flex justify-center items-center w-8 h-8 rounded-full ring-2 cursor-pointer bg-primary ring-secondary">
@@ -292,8 +292,8 @@ const HorNav = ({ activeSegment }) => {
 							</div>
 						</DialogContent>
 					</Dialog>
-					<div className="flex relative justify-between items-center w-full text-white bg-gradient-to-r rounded-full from-primary/70 to-primary/70 hornav__links--container dark:bg-primary">
-						<div className="flex overflow-hidden justify-between items-center mr-2 h-[56px] md:w-4/5  w-full rounded-full bg-gradient-to-r from-primaryDark to-primary">
+					<div className="flex relative justify-between items-center w-full min-w-0 text-white bg-gradient-to-r rounded-full from-primary/70 to-primary/70 hornav__links--container dark:bg-primary">
+						<div className="flex overflow-hidden justify-between items-center mr-2 h-[56px] rounded-full bg-gradient-to-r from-primaryDark to-primary min-w-0 flex-1">
 							<div
 								onClick={scrollLeft}
 								className="flex justify-center items-center w-14 h-full ring-1 cursor-pointer bg-primary ring-accent">
@@ -302,7 +302,7 @@ const HorNav = ({ activeSegment }) => {
 							<NavigationMenu
 								ref={scrollContainerRef}
 								onWheel={handleScroll}
-								className="flex overflow-y-hidden gap-5 justify-around items-center w-full h-14 text-sm list-none whitespace-nowrap scroll-smooth overflow-x-auto [&::-webkit-scrollbar]:h-1 [&::-webkit-scrollbar-track]:bg-primaryLight [&::-webkit-scrollbar-thumb]:bg-primary dark:[&::-webkit-scrollbar-track]:bg-neutral-700  dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 static">
+								className="flex overflow-y-hidden gap-5 justify-around items-center h-14 text-sm list-none whitespace-nowrap scroll-smooth overflow-x-auto min-w-0 [&::-webkit-scrollbar]:h-1 [&::-webkit-scrollbar-track]:bg-primaryLight [&::-webkit-scrollbar-thumb]:bg-primary dark:[&::-webkit-scrollbar-track]:bg-neutral-700  dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 static">
 								<NavigationMenuList className="gap-2 px-2">
 									{DATANAV.NAVBAR.map((item, i) => {
 										if (item.segments) {
@@ -401,17 +401,17 @@ const HorNav = ({ activeSegment }) => {
 				</div>
 
 				{/* parte derecha del navbar */}
-				<div className="flex justify-end items-center space-x-4 h-full">
-					<div className="w-1 h-12 rounded bg-gradient-to-b from-primary to-[hsl(var(--primary-dark))] mx-1"></div>
-					<div className="flex items-center h-full">
-						<div className="flex items-center">
-							<figure className="w-20">
-								<img src={imgLogo} alt="logo" />
+				<div className="flex overflow-hidden flex-shrink-0 justify-end items-center space-x-4 h-full">
+					<div className="w-1 h-12 rounded bg-gradient-to-b from-primary to-[hsl(var(--primary-dark))] mx-1 flex-shrink-0"></div>
+					<div className="flex items-center min-w-0 h-full">
+						<div className="flex items-center min-w-0">
+							<figure className="flex-shrink-0 w-20">
+								<img src={imgLogo} alt="logo" className="max-w-full h-auto" />
 							</figure>
 
-							<div className="hidden relative flex-col justify-center items-center mx-4 lg:flex">
-								<h2 className="text-3xl text-center text-primary dark:text-white text-nowrap">Web Training</h2>
-								<span className="text-sm text-center text-primary dark:text-white text-nowrap">NOMBRE CAMPAÑA</span>
+							<div className="hidden relative flex-col justify-center items-center mx-4 min-w-0 lg:flex">
+								<h2 className="text-3xl text-center truncate text-primary dark:text-white">Web Training</h2>
+								<span className="text-sm text-center truncate text-primary dark:text-white">NOMBRE CAMPAÑA</span>
 							</div>
 						</div>
 					</div>
