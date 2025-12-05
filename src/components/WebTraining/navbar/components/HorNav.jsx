@@ -216,7 +216,7 @@ const HorNav = ({ activeSegment }) => {
 	})
 	return (
 		<div className="w-full hornav">
-			<nav className="flex overflow-hidden relative justify-between items-center px-2 max-w-full h-20 bg-background hornav__links">
+			<nav className="flex relative justify-between items-center px-2 max-w-full h-20 bg-background hornav__links">
 				{/* botones de navegación */}
 				<div className="flex flex-1 col-span-2 items-center px-2 space-x-2 min-w-0">
 					{/* Dialog de navegación completa */}
