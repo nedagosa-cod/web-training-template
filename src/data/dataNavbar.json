@@ -47,68 +47,6 @@
 					"image": "GAP.png"
 				}
 			]
-		},
-		{
-			"title": "D2C",
-			"route": "/d2c",
-			"icon": "bookMarket",
-			"portada": false,
-			"segments": ["CAMPAÑA"],
-			"dropDown": [
-				{
-					"title": "Carga de Ventas",
-					"route": "/flujogram/ventas-d2c-carga",
-					"icon": "bookMarket",
-					"description": "Flujograma"
-				},
-				{
-					"title": "Tipificación",
-					"route": "/flujogram/ventas-d2c-tipificacion",
-					"icon": "bookMarket",
-					"description": "Flujograma"
-				},
-				{
-					"title": "Cotización",
-					"route": "/cotizacion",
-					"icon": "bookMarket",
-					"description": "Carta Cotización"
-				}
-			]
-		},
-		{
-			"title": "EVALUACIÓN",
-			"route": "/evaluacion",
-			"icon": "bookMarket"
-		},
-		{
-			"title": "EVALUACIÓN",
-			"route": "/evaluacion",
-			"icon": "bookMarket"
-		},
-		{
-			"title": "EVALUACIÓN",
-			"route": "/evaluacion",
-			"icon": "bookMarket"
-		},
-		{
-			"title": "EVALUACIÓN",
-			"route": "/evaluacion",
-			"icon": "bookMarket"
-		},
-		{
-			"title": "EVALUACIÓN",
-			"route": "/evaluacion",
-			"icon": "bookMarket"
-		},
-		{
-			"title": "EVALUACIÓN",
-			"route": "/evaluacion",
-			"icon": "bookMarket"
-		},
-		{
-			"title": "EVALUACIÓN",
-			"route": "/evaluacion",
-			"icon": "bookMarket"
 		}
 	]
 }
