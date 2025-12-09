@@ -9,6 +9,29 @@ import readXlsxFile from 'read-excel-file'
 export default function ConfigMenu() {
 	const [version, setVersion] = useState(null)
 	const { setTheme, theme } = useTheme()
+
+	const handleLogout = () => {
+		if (typeof window === 'undefined') return
+		// Intentar usar la función expuesta por session.js para reactivar el formulario
+		if (typeof window.reactivateSessionForm === 'function') {
+			window.reactivateSessionForm()
+			return
+		}
+
+		// Fallback por si el script aún no está disponible
+		sessionStorage.setItem('session', 'false')
+		localStorage.removeItem('userAsesor')
+		const root = document.getElementById('root')
+		if (root) {
+			root.removeAttribute('active-session')
+		}
+		const formContainer = document.getElementById('sendForm')?.parentNode?.parentNode
+		if (formContainer) {
+			formContainer.classList.remove('hide')
+			const errorElement = formContainer.querySelector('.sessionRec__error')
+			if (errorElement) errorElement.innerHTML = ''
+		}
+	}
 	const setVersionState = async () => {
 		const ruta = `./BASES_XxxXxx/NO_TOCAR.xlsx`
 		const rutaCompleta = new URL(ruta, window.location.href).href
@@ -73,12 +96,7 @@ export default function ConfigMenu() {
 							</Button>
 							<Separator />
 
-							<Button
-								variant="ghost"
-								className="flex justify-between w-full"
-								onClick={() => {
-									window.close()
-								}}>
+							<Button variant="ghost" className="flex justify-between w-full" onClick={handleLogout}>
 								Salir <LogOut className="w-4 h-4 text-primary" />
 							</Button>
 						</div>

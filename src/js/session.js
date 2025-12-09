@@ -114,6 +114,9 @@ const initSession = () => {
 		console.log('Formulario reactivado')
 	}
 
+	// Exponer la función para permitir cierre de sesión desde React
+	window.reactivateSessionForm = reactivateForm
+
 	// Detector de comandos ocultos
 	const initHiddenCommand = () => {
 		let typedSequence = ''
