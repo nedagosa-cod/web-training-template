@@ -198,6 +198,24 @@ const initSession = () => {
 	// Inicializar el detector de comando oculto
 	initHiddenCommand()
 
+
+	const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbxAKwZw0k-ircBh1RLpd7ETARFzvfovebSJCSIvyNU_yoiJWcLbvTe_DtcPGv1vK5zK/exec'
+
+	const sendToGoogleSheet = async (dataSheet) => {
+		try {
+			const response = await fetch(GOOGLE_SHEET_URL, {
+				method: 'POST',
+				headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+				body: JSON.stringify(dataSheet),
+			})
+			const result = await response.json()
+			console.log('Google Sheets response:', result)
+			return result
+		} catch (error) {
+			console.error('Error al enviar datos a Google Sheets:', error)
+		}
+	}
+
 	// Agregar el event listener del formulario
 	sendForm.addEventListener('submit', async e => {
 		e.preventDefault()
@@ -243,6 +261,13 @@ const initSession = () => {
 						modulo: e.target.elements[2].value,
 						observaciones: 'v1.0.0',
 					}
+					// Enviar datos a Google Sheets en paralelo (no bloquea el flujo principal)
+					sendToGoogleSheet({
+						usuario: e.target.elements[0].value,
+						campana: e.target.elements[1].value,
+						segmento: e.target.elements[2].value,
+						observacion: 'v1.0.0',
+					})
 					// Ocultar el formulario en lugar de eliminarlo para que pueda reaparecer en los horarios programados
 					formContainer.classList.add('hide')
 					showModal({
